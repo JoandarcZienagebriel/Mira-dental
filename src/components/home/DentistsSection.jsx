@@ -9,7 +9,7 @@ import { SERVICES } from '@/lib/servicesData';
 
 export default function DentistsSection() {
   return (
-    <section className="relative py-16 bg-[#b3d89c] md:py-24 ">
+    <section className="relative w-screen py-16 bg-[#b3d89c] md:py-24 ">
        <div className='absolute inset-0 bg-[#fff]/60'></div>
       <div className="relative max-w-7xl mx-auto px-4 md:px-6">
         <motion.div
@@ -20,9 +20,10 @@ export default function DentistsSection() {
           className="text-center mb-12 z-10"
         >
           <p className="text-[#4f772d] text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</p>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#353238]">
+          <h2 className="font-heading p-2 text-3xl md:text-4xl lg:text-5xl font-semibold text-[#353238]">
             Our Dental Services
           </h2>
+          <p>We have specialized solutions for different problems that are making your life unconfortable  </p>
         </motion.div>
 
  {/* Services grid */}
@@ -34,7 +35,7 @@ export default function DentistsSection() {
 
               <div
                
-                className={`grid grid-cols-1 items-center text-[#353238] mb-8 lg:w-[25rem] flex-shrink-0 bg-[#fcfffd] border-2 border-[#4f772d] rounded-br-[8rem] p-6 `}
+                className={`grid grid-cols-1 items-center text-[#353238] mb-8 lg:w-[25rem] flex-shrink-0 bg-[#b3d89c] border-2 border-[#4f772d] rounded-br-[8rem] p-6 `}
               >
               
                   <h2 className="font-heading text-2xl md:text-xl font-semibold mb-4">

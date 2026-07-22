@@ -6,7 +6,8 @@ const width = window.innerWidth;
 
 
 
-const isLarge = width >= 320;
+const isLarge = width >= 768;
+
 const reviews = [
   {
     name: 'Hana Girma',
@@ -21,6 +22,7 @@ const reviews = [
       borderBottomLeftRadius: 14,
       borderBottomRightRadius: 14,
     },
+
   },
   {
     name: 'Jess',
@@ -34,6 +36,7 @@ const reviews = [
       borderBottomLeftRadius: 14,
       borderBottomRightRadius: 14,
     },
+
   },
   {
     name: 'Dawit Mengistu',
@@ -46,6 +49,7 @@ const reviews = [
       borderBottomLeftRadius: 14,
       borderBottomRightRadius: 14,
     },
+    
   },
    {
     name: 'Yors',
@@ -58,6 +62,7 @@ const reviews = [
       borderBottomLeftRadius: 170,
       borderBottomRightRadius: 14,
     },
+
   },
    {
     name: 'Abel Tsega',
@@ -70,6 +75,7 @@ const reviews = [
       borderBottomLeftRadius: 14,
       borderBottomRightRadius: 14,
     },
+  
   },
    {
     name: 'James Fuhad',
@@ -83,6 +89,7 @@ const reviews = [
       borderBottomLeftRadius: 14,
       borderBottomRightRadius: 170,
     },
+
   },
 ];
 
@@ -104,7 +111,7 @@ export default function ReviewsSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-2 md:grid-cols-3 xl:gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 xl:gap-6">
           {reviews.map((review, i) => (
             <motion.div
               key={review.name}
@@ -112,7 +119,7 @@ export default function ReviewsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex flex-col items-start justify-center p-12 md:p-11 border-4 border-[#4f772d] w-70 h-full bg-[#FCFDEC] xl:w-[23rem] xl:h-[22rem]" style={{...(isLarge ? review.radius : {})}} 
+              className='flex flex-col items-start justify-center p-12 md:p-11 border-4 border-[#4f772d] w-70 h-full bg-[#b3d89c] xl:w-[23rem] xl:h-[22rem]' style={{...(isLarge ? review.radius : {}) }} 
             >
               <div className="flex gap-1">
                 {Array.from({ length: review.rating }).map((_, j) => (

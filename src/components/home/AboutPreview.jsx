@@ -8,16 +8,20 @@ import us from '../../assets/img/us.avif';
 export default function AboutPreview() {
 
   return (
-    <section className="py-0 lg:py-24">
-      <div className="max-w-7xl mx-auto bg-[#b3d89c]/60">
-        <div className="flex flex-col items-center gap-0 md:min-h-screen md:border-4 border-[#4f772d] md:bg-[url('../../../assets/img/us.avif')] bg-cover bg-no-repeat "
+    <section className="py-0 bg-[#b3d89c]/60 mb-0">
+        <h2 className='text-center text-3xl md:text-3xl pb-2 pt-24'>Experience a Life Changing Smile</h2>
+         <p className="text-[#000] text-center leading-relaxed pb-4">
+          Dental care designed around your comfort, health, and confidence
+             </p>
+      <div className="max-w-7xl m-0 bg-[#b3d89c]/60">
+        <div className="flex flex-col items-center gap-0 md:min-h-screen w-screen md:bg-[url('../../../assets/img/us.avif')] bg-cover bg-no-repeat "
        >
-          <motion.div
+        <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6 }}
-            className="order-2 p-4 md:order-1 text-lg  md:w-1/2 md:bg-[#b3d89c]/60 md:p-10 lg:p-14 md:m-auto md:rounded-tr-[10rem] "
+            className="order-2 p-4 md:order-1 text-lg  md:w-1/2 md:bg-[#b3d89c]/60 md:p-10 lg:px-12 lg:py-12 md:m-auto md:rounded-tr-[10rem] "
           >
          
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#4f772d] mb-4 leading-tight">

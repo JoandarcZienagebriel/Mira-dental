@@ -1,5 +1,10 @@
 import doc1 from '../assets/img/doc1.avif';
 import doc2 from '../assets/img/doc2.avif';
+import restore from '../assets/img/restorative.jpg';
+import receptionist from '../assets/img/receptionist.avif';
+import aboutbg from '../assets/img/aboutbg.avif';
+import general from '../assets/img/general.jpg';
+import veneer from '../assets/img/veneer.jpg';
 export const IMAGES = {
   
   hero: {
@@ -12,12 +17,35 @@ export const IMAGES = {
   dentist2: doc2,
   teethWhitening: 'https://media.base44.com/images/public/6a3abba0b638fbcdb7679bb9/9e527115f_generated_f662da64.png',
   
-  gallery: [
-    'https://media.base44.com/images/public/6a3abba0b638fbcdb7679bb9/325be8de9_generated_007238e9.png',
-    'https://media.base44.com/images/public/6a3abba0b638fbcdb7679bb9/00b22ac35_generated_5562c994.png',
-    'https://media.base44.com/images/public/6a3abba0b638fbcdb7679bb9/18e9802f8_generated_980535e5.png',
-    'https://media.base44.com/images/public/6a3abba0b638fbcdb7679bb9/9eaa1d926_generated_9877e878.png',
-    'https://media.base44.com/images/public/6a3abba0b638fbcdb7679bb9/7bc8c0b87_generated_61d1d93a.png',
-   
+   gallery: [
+    {image: general,
+    title: 'Preventive Dentistry',
+    subcategories:['Oral Examination & Diagnosis', 'Professional Cleaning', 'Fluoride Treatments', 'Oral Hygiene Education'], 
+  },
+   {image: veneer,
+    title: 'Cosmetic Dentistry',
+    subcategories:['Veneers', 'Cosmetic Bonding', 'Smile Makeovers', 'Orthodontics', 'Full Mouth Rehabilitation '],
+  },
+   {
+    image: restore,
+    title: 'Restorative Dentistry',
+    subcategories:['Root Canal Treatment', 'Tooth Extractions', 'Dentures', 'Dental Implants', 'Periodontal Treatment'],
+  },
+    
   ],
 };
+export const ABOUT_SLIDER =[
+  {image: receptionist,
+    title: 'Preventive Dentistry',
+    subcategories:['Oral Examination & Diagnosis', 'Professional Cleaning', 'Fluoride Treatments', 'Oral Hygiene Education'], 
+  },
+   {image: aboutbg,
+    title: 'Cosmetic Dentistry',
+    subcategories:['Veneers', 'Cosmetic Bonding', 'Smile Makeovers', 'Orthodontics', 'Full Mouth Rehabilitation '],
+  },
+   {
+    image: restore,
+    title: 'Restorative Dentistry',
+    subcategories:['Root Canal Treatment', 'Tooth Extractions', 'Dentures', 'Dental Implants', 'Periodontal Treatment'],
+  },
+]

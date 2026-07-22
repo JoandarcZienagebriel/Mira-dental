@@ -17,7 +17,7 @@ export default function HeroSection() {
   }, [images.length]);
 
   return (
-    <section className="relative w-full h-[110vh] bg-[#b3d89c]/60 border-b-4 border-[#b3d89c] overflow-hidden">
+    <section className="relative w-screen h-[100vh] overflow-hidden">
       {/* Background images */}
      
     <div className='' >
@@ -55,7 +55,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-heading text-xl text-black text-center p-4 pb-8 md:text-xl md:w-[35rem] lg:text-2xl xl:text-3xl font-bold"
+          className="font-heading text-xl text-white text-center p-4 pb-8 md:text-xl md:w-[35rem] lg:text-2xl xl:text-3xl font-bold"
         >
           A healthier smile today creates greater confidence and brighter tomorrows
         </motion.h1>
