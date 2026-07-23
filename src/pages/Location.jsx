@@ -10,14 +10,14 @@ export default function Location() {
     <div>
       {/* Header */}
       <section className="relative py-12 md:py-20 bg-center bg-cover bg-no-repeat"style={{backgroundImage:`url(${locationbg})`}}>
-         <div className='absolute inset-0 bg-[#000]/30'></div>
+         <div className='absolute inset-0 bg-[#000]/20'></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-[#4f772d] text-sm font-semibold tracking-widest uppercase mb-3">Find Us</p>
+            <p className="text-[#000] text-sm font-semibold tracking-widest uppercase mb-3">Find Us</p>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#132a13] mb-4">
               Our Location
             </h1>

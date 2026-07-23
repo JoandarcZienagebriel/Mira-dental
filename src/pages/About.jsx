@@ -11,14 +11,14 @@ export default function About() {
     <div>
       {/* Clinic Story */}
       <section className="relative py-16 md:py-24 bg-center bg-cover bg-no-repeat" style={{backgroundImage:`url(${aboutbg})`}}>
-        <div className='absolute inset-0 object-cover bg-[#000]/30'/>
+        <div className='absolute inset-0 object-cover bg-[#000]/20'/>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-white md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm text-[#4f772d] font-semibold tracking-widest uppercase mb-3">Our Story</p>
+            <p className="text-sm text-[#000] font-semibold tracking-widest uppercase mb-3">Our Story</p>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#132a13] mb-8 leading-tight">
               Where It All Began
             </h1>

@@ -17,7 +17,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className='pt-16'
           >
-            <p className="text-[#4f772d] text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</p>
+            <p className="text-[#000] text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</p>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#132a13] mb-4">
               Our Dental Services
             </h1>
