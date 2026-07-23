@@ -5,6 +5,10 @@ import receptionist from '../assets/img/receptionist.avif';
 import aboutbg from '../assets/img/aboutbg.avif';
 import general from '../assets/img/general.jpg';
 import veneer from '../assets/img/veneer.jpg';
+import sette from '../assets/img/sette.jpg';
+import otto from '../assets/img/otto.jpg';
+import sei from '../assets/img/sei.jpg';
+import nove from '../assets/img/nove.jpg';
 export const IMAGES = {
   
   hero: {
@@ -32,20 +36,18 @@ export const IMAGES = {
     subcategories:['Root Canal Treatment', 'Tooth Extractions', 'Dentures', 'Dental Implants', 'Periodontal Treatment'],
   },
     
-  ],
+   ]
 };
 export const ABOUT_SLIDER =[
-  {image: receptionist,
-    title: 'Preventive Dentistry',
-    subcategories:['Oral Examination & Diagnosis', 'Professional Cleaning', 'Fluoride Treatments', 'Oral Hygiene Education'], 
-  },
-   {image: aboutbg,
-    title: 'Cosmetic Dentistry',
-    subcategories:['Veneers', 'Cosmetic Bonding', 'Smile Makeovers', 'Orthodontics', 'Full Mouth Rehabilitation '],
-  },
+  {image: sette,
+    },
+   {image: sei,
+     },
    {
-    image: restore,
-    title: 'Restorative Dentistry',
-    subcategories:['Root Canal Treatment', 'Tooth Extractions', 'Dentures', 'Dental Implants', 'Periodontal Treatment'],
-  },
+    image: otto,
+   },
+   {
+    image: nove,
+   },
+    
 ]

@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
+ import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { IMAGES } from '@/lib/images';
 import aboutbg from '../assets/img/aboutbg.avif';
+import { ABOUT_SLIDER } from '@/lib/images';
 
 export default function About() {
   const [lightbox, setLightbox] = useState(null);
+   const [current, setCurrent] = useState(0);
+
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % ABOUT_SLIDER.length);
+  }, []);
+
+  const prev = useCallback(() => {
+    setCurrent((p) => (p - 1 + ABOUT_SLIDER.length) % ABOUT_SLIDER.length);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(next, 6000);
+    return () => clearInterval(timer);
+  }, [next]);
+
+  const slide = ABOUT_SLIDER[current];
 
   return (
     <div>
@@ -110,75 +127,41 @@ export default function About() {
       </section>
 
       {/* Gallery */}
-      <section className="py-16 md:py-24 bg-[#FAF9F7]">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <p className="text-[#4f772d] text-sm font-semibold tracking-widest uppercase mb-3">Our Space</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-[#353238]">
-              Inside Dental
-            </h2>
-          </motion.div>
+    <section
+  
+            fetchpriority="high" style={{backgroundImage:`url(${slide.image})`}}
+      className="relative h-screen w-full bg-center bg-cover over bg-norepeat flow-hidden" 
+      aria-label="Hero"
+      aria-roledescription="carousel"
+    >
+        <div className='absolute inset-0 object-cover bg-[#000]/30'/>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-            {IMAGES.gallery.map((img, i) => (
-              <motion.button
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
-                onClick={() => setLightbox(i)}
-                className={`overflow-hidden rounded-lg cursor-pointer group ${
-                  i === 0 ? 'col-span-2 row-span-2' : ''
-                }`}
-              >
-                <img
-                  src={img}
-                  alt={`Clinic interior ${i + 1}`}
-                  className={`w-full object-cover border-4 border-[#4f772d] group-hover:scale-105 transition-transform duration-500 ${
-                    i === 0 ? 'h-full min-h-[200px] md:min-h-[300px]' : 'h-40 md:h-48'
-                  }`}
-                />
-              </motion.button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Lightbox */}
-      <AnimatePresence>
-        {lightbox !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
-            onClick={() => setLightbox(null)}
-          >
-            <button
-              onClick={() => setLightbox(null)}
-              className="absolute top-4 right-4 text-white/80 hover:text-white z-10"
-            >
-              <X className="w-8 h-8" />
-            </button>
-            <motion.img
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              src={IMAGES.gallery[lightbox]}
-              alt="Gallery"
-              className="max-w-full max-h-[85vh] object-contain rounded-lg"
-              onClick={(e) => e.stopPropagation()}
-            />
-          </motion.div>
-        )}
+        
+      <div className='relative z-100 max-w-4xl pt-64 pl-4 text-[#fff] md:pr-[15rem] lg:pr-[20rem] xl:pr-[23rem]'>
+        <AnimatePresence>
+        <motion.div
+          key={current}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: .4 }}
+     
+        >
+         
+        </motion.div>
       </AnimatePresence>
+  <h2 className="font-heading pb-4 text-3xl md:text-4xl font-semibold text-black">
+              Our Work Place
+            </h2>
+                       <p className='text-base md:text-md xl:text-lg lg:leading-[1.5rem] lg:leading-[2rem]'>
+               Clean lines, calming colors, durable materials, and efficient layouts work together to enhance the patient experience while supporting safe and seamless clinical operations.
+                       </p>
+                    
+            </div>
+             
+</section>
+
+    
     </div>
   );
 }
