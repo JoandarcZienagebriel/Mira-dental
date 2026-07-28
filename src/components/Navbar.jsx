@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#132a13]/90 backdrop-blur-md border-b border-[#DDD6CE]/40">
       {/* Desktop top bar */}
-      <div className="hidden md:flex items-center justify-end max-w-7xl mx-auto px-6 pt-3 pb-1 gap-4">
+      <div className="hidden md:flex items-center justify-end max-w-7xl mx-auto pt-3 gap-4">
         <a
           href="tel:09336495034"
           className="flex items-center gap-2 border border-white px-6 py-2.5 md:text-sm xl:text-[1rem] font-medium text-white hover:bg-[z] hover:text-white hover:rounded-3xl transition-colors"

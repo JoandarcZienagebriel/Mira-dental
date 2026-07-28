@@ -7,7 +7,7 @@ import align from '../assets/img/align.avif';
 import one from '../assets/img/1.avif';
 import two from '../assets/img/3.avif'
 import uno from '../assets/img/1.jpg';
-import due from '../assets/img/2.png'
+import due from '../assets/img/2.avif'
 import tre from '../assets/img/tre.jpg';
 import quattro from '../assets/img/quattro.jpg'
 export const SERVICES = [

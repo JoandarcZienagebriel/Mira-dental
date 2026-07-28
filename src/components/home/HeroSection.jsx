@@ -48,7 +48,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="md:flex flex-row md:gap-5 font-heading text-center text-5xl text-[#353238]md:pt-[5rem] font-bold lg:text-6xl"
         >
-          <h1 className='text-[#4f772d]'>Invest</h1> <h1 className='text-[#132a13]'> In Your Smile</h1>
+          <h1 className='text-[#4f772d]'>Invest In Your Smile</h1>
         </motion.div>
 
           <motion.h1
@@ -75,7 +75,7 @@ export default function HeroSection() {
         >
           <Link
             to="/booking"
-            className="bg-[#4f772d] rounded-lg text-white px-4 py-3 text-base md:text-md font-medium hover:bg-[#4f772d] hover:rounded-full transition-all hover:shadow-lg hover:shadow-[#2CBFAE]/25"
+            className="bg-[#4f772d] rounded-lg text-white px-5 py-4 text-base md:text-md font-medium hover:bg-[#4f772d] hover:rounded-full transition-all hover:shadow-lg hover:shadow-[#2CBFAE]/25"
           >
             Book an appointment
           </Link>

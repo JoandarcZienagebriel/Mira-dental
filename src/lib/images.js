@@ -1,14 +1,13 @@
 import doc1 from '../assets/img/doc1.avif';
 import doc2 from '../assets/img/doc2.avif';
-import restore from '../assets/img/restorative.jpg';
+import restore from '../assets/img/restorative.avif';
 import receptionist from '../assets/img/receptionist.avif';
-import aboutbg from '../assets/img/aboutbg.avif';
-import general from '../assets/img/general.jpg';
-import veneer from '../assets/img/veneer.jpg';
-import sette from '../assets/img/sette.jpg';
-import otto from '../assets/img/otto.jpg';
-import sei from '../assets/img/sei.jpg';
-import nove from '../assets/img/nove.jpg';
+
+import general from '../assets/img/general.avif';
+import veneer from '../assets/img/veneer.avif';
+import otto from '../assets/img/otto.avif';
+import sei from '../assets/img/sei.avif';
+import nove from '../assets/img/nove.avif';
 export const IMAGES = {
   
   hero: {
@@ -39,8 +38,7 @@ export const IMAGES = {
    ]
 };
 export const ABOUT_SLIDER =[
-  {image: sette,
-    },
+ 
    {image: sei,
      },
    {

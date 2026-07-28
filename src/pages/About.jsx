@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { IMAGES } from '@/lib/images';
-import aboutbg from '../assets/img/aboutbg.avif';
+import sei from '../assets/img/sei.avif';
 import { ABOUT_SLIDER } from '@/lib/images';
 
 export default function About() {
@@ -27,8 +27,8 @@ export default function About() {
   return (
     <div>
       {/* Clinic Story */}
-      <section className="relative py-16 md:py-24 bg-center bg-cover bg-no-repeat" style={{backgroundImage:`url(${aboutbg})`}}>
-        <div className='absolute inset-0 object-cover bg-[#000]/20'/>
+      <section className="relative py-16 md:py-24 bg-center bg-cover bg-no-repeat" style={{backgroundImage:`url(${sei})`}}>
+        <div className='absolute inset-0 object-cover bg-[#000]/40'/>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-white md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
