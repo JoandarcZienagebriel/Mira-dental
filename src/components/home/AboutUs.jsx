@@ -5,7 +5,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
 import team from '../../assets/img/team.jpg';
 
-
 export default function DentistSectionOne() {
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
