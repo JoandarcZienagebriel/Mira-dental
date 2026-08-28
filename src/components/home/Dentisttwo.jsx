@@ -6,7 +6,6 @@ import { IMAGES } from '@/lib/images';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
-import '@/app.css';
 import dentist_two from '../../assets/img/senior.avif';
 
 export default function DentistSectionTwo() {

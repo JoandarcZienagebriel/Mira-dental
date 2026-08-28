@@ -5,7 +5,6 @@ import pedi from '../assets/img/child.avif';
 import implant from '../assets/img/implant.avif';
 import align from '../assets/img/align.avif';
 import one from '../assets/img/1.jpg';
-import two from '../assets/img/3.avif';
 import due from '../assets/img/2.avif';
 import tre from '../assets/img/9.jpg';
 import five from '../assets/img/5.webp'
@@ -13,6 +12,8 @@ import four from '../assets/img/tre.jpg';
 import restorative from '../assets/img/restorative.avif';
 import veneer from '../assets/img/veneer.avif';
 import us from '../assets/img/us.avif';
+import six from '../assets/img/3.jpg';
+import seven from '../assets/img/4.jpg';
 export const SERVICES = [
   {
     title: 'Check-Up & Cleaning',
@@ -66,6 +67,12 @@ export const SERVICES_SUMMARY = [
     
   ];
 export const BEFORE = [
+   {
+     image: six,
+  },
+{
+     image: seven,
+  },
 
   {
      image: due,
@@ -82,7 +89,7 @@ export const BEFORE = [
   {
      image: four,
   },
-
+ 
  
 ]
 export const PROCEDURE = [

@@ -87,10 +87,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className=' pt-16'
           >
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#000] mb-4">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#fff] mb-4">
            Our Work Place
             </h1>
-             <p className='space-y-5 leading-relaxed text-surface text-base md:text-md xl:text-lg max-w-2xl mx-auto'>
+             <p className='space-y-5 leading-relaxed text-[#000] text-base md:text-md xl:text-lg max-w-2xl mx-auto'>
                Clean lines, calming colors, durable materials, and efficient layouts work together to enhance the patient experience while supporting safe and seamless clinical operations.
                        </p>
          

@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
 import '@/app.css';
-
+import dentistOne from '../../assets/img/doc1.jpg';
 export default function DentistSectionOne() {
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -80,7 +80,7 @@ return()=>{
 </p>
                  
                  </div>
-                               <img src={IMAGES.dentist1} className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-[40rem]'/>
+                               <img src={dentistOne} className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-[40rem]'/>
         </motion.div>
    
      
