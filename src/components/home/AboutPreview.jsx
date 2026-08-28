@@ -4,7 +4,6 @@ import { IMAGES } from '@/lib/images';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
-import '@/app.css';
 import dentistOne from '../../assets/img/doc1.jpg';
 export default function DentistSectionOne() {
 

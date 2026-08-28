@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
-import '@/app.css';
 import team from '../../assets/img/assistant.avif'
 export default function Team() {
 

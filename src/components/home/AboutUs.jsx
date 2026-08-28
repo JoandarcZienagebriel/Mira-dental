@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
 import team from '../../assets/img/team.jpg';
-import '@/app.css';
+
 
 export default function DentistSectionOne() {
 
