@@ -42,10 +42,10 @@ export default function CalendarPicker({ value, onChange, weekStart, onWeekChang
               onClick={() => onChange(day)}
               className={`flex flex-col items-center py-2 px-1 rounded-md text-center transition-all ${
                 selected
-                  ? 'bg-[#4f772d] text-white'
+                  ? 'bg-accent text-white'
                   : disabled
                   ? 'text-[#273138] cursor-not-allowed'
-                  : 'text-[#273138] hover:bg-[#F1EEE9]'
+                  : 'text-[#273138] hover:bg-card'
               }`}
             >
               <span className="text-[10px] font-medium uppercase">{format(day, 'EEE')}</span>

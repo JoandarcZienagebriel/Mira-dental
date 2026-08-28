@@ -1,92 +1,117 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { IMAGES } from '@/lib/images';
-import clinicS from '../../assets/video/small.mp4';
-import clinicB from '../../assets/video/big.mp4';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import TextPlugin from 'gsap/TextPlugin';
+import { IMAGES, HERO_SLIDES } from '@/lib/images';
+
 
 export default function HeroSection() {
-  const [current, setCurrent] = useState(0);
-  const images = IMAGES.hero;
+const [current, setCurrent] = useState(0);
+
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % HERO_SLIDES.length);
+  }, []);
+
+  const prev = useCallback(() => {
+    setCurrent((p) => (p - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
+  }, []);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
+    const timer = setInterval(next, 6000);
     return () => clearInterval(timer);
-  }, [images.length]);
+  }, [next]);
+
+  const slide = HERO_SLIDES[current];
+
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+const logoRef= useRef(null);
+useEffect(()=>{
+  const animation = gsap.to('.hero',{
+    scrollTrigger:{
+      trigger: '.hero',
+      pin: true,
+      start:'top 5%',
+      end:'+=1000',
+      
+    }
+  })
+  return()=>{
+    animation.kill();
+  }
+},[])
 
   return (
-    <section className="relative w-screen h-[100vh] overflow-hidden">
+
+    
+ 
+     <section className="hero relative w-screen h-[100vh] overflow-hidden mt-[-7rem]">
       {/* Background images */}
-     
-    <div className='' >
+<div className="relative h-screen">
+       
+      <AnimatePresence>
+        <motion.div
+          key={current}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: .6 }}
+          className="absolute inset-0 "
+        >
+          <img
+            src={slide.image}
+            alt={slide.tagline}
+            className="w-full h-full object-cover overflow-hidden"
+            fetchpriority="high"
+          />
+        
+        </motion.div>
+      </AnimatePresence>
 
    <div className="relative h-screen overflow-hidden">
- 
-
-
-          <video autoPlay muted loop playsInline preload="auto"
-            className="absolute inset-0 h-full w-full object-cover md:hidden"
-  >
-    <source src={clinicS} type="video/mp4" />
-  </video>
-
-
-  <video autoPlay muted loop playsInline preload="auto"
-            className="absolute inset-0 hidden h-full w-full object-cover md:block"
-  >
-    <source src={clinicB} type="video/mp4" />
-  </video>
-         
-       
       {/* Content overlay */}
-      <div className="relative flex flex-col items-center justify-center h-full pb-16 z-10 md:pb-24 px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="md:flex flex-row md:gap-5 font-heading text-center text-5xl text-[#353238]md:pt-[5rem] font-bold lg:text-6xl"
-        >
-          <h1 className='text-[#4f772d]'>Invest In Your Smile</h1>
-        </motion.div>
+     
+  
+      <div className="relative flex flex-col items-left justify-center h-full pb-16 md:pb-[5rem] px-4 mt-[7rem]">
+    
 
           <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-heading text-xl text-white text-center p-4 pb-8 md:text-xl md:w-[35rem] lg:text-2xl xl:text-3xl font-bold"
+          className="font-body text-xl text-[#000] text-left md:text-xl md:w-[55rem] lg:text-2xl xl:text-5xl font-bold"
         >
-          A healthier smile today creates greater confidence and brighter tomorrows
+        GET A LIFE CHANGING SMILE, YOU'RE JUST ONE APPOINTMENT AWAY.
         </motion.h1>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-      
-        ></motion.div>
         
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-      
-        >
-          <Link
+     
+         <div className='flex gap-4'>
+           <Link
             to="/booking"
-            className="bg-[#4f772d] rounded-lg text-white px-5 py-4 text-base md:text-md font-medium hover:bg-[#4f772d] hover:rounded-full transition-all hover:shadow-lg hover:shadow-[#2CBFAE]/25"
+            className="font-body bg-accent rounded-[6rem] text-white px-8 py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
           >
             Book an appointment
           </Link>
-        </motion.div>
+<Link
+            to="/booking"
+            className="font-body bg-accent rounded-[6rem] text-white px-8 py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
+          >
+            Contact Us
+          </Link>
          </div>
-      </div>
+
+         </div>
+
 
       
-     
+     </div>
      
       </div>
+       
     </section>
+
   );
 }

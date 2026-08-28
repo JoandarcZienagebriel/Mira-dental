@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback, useRef} from 'react';
 import { motion } from 'framer-motion';
-import { IMAGES } from '@/lib/images';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
+import team from '../../assets/img/team.jpg';
 import '@/app.css';
 
 export default function DentistSectionOne() {
@@ -68,8 +68,8 @@ return()=>{
           className="gap-0 w-full h-full min-h-screen grid grid-rows-[1fr_1fr] bg-surface md:grid-rows-none md:grid-cols-[1fr_1fr]"
         >
               <div className='order-2 md:order-2 p-[1.5rem] mt-16'>
-          <h2 className="font-heading text-3xl text-center md:text-4xl font-semibold text-primary mb-6 leading-tight">
-       Dr. Amanuel
+          <h2 className="font-heading text-3xl text-center md:text-4xl font-semibold text-[#000] mb-6">
+       Meet Our Team
           </h2>
     
                   <p className='font-body text-card text-[1rem] md:text-[1.5rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
@@ -80,7 +80,7 @@ return()=>{
 </p>
                  
                  </div>
-                               <img src={IMAGES.dentist1} className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-[40rem]'/>
+                               <img src={team} className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-[40rem]'/>
         </motion.div>
    
      

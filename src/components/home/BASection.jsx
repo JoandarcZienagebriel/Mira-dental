@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 import { IMAGES } from '@/lib/images';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Import } from 'lucide-react';
-import { BEFORE, SERVICES } from '@/lib/servicesData';
+import { BEFORE} from '@/lib/servicesData';
 
 
 
 export default function DentistsSection() {
   return (
-    <section className="relative py-16 md:py-24 bg-[#b3d89c]/60 ">
+    <section className="relative py-16 md:py-24 mt-16 bg-[#f6fff8]">
        
       <div className="relative max-w-7xl mx-auto px-4 md:px-6">
         <motion.div
@@ -19,8 +19,8 @@ export default function DentistsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 z-10"
         >
-          <p className="text-sm font-semibold tracking-widest uppercase mb-3 text-[#4f772d]">Transformation</p>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#353238]">
+   
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
             BEFORE AND AFTER PHOTOS
           </h2>
         </motion.div>
@@ -37,13 +37,13 @@ export default function DentistsSection() {
                 className={`grid grid-cols-1 items-center text-[#353238] mb-8 lg:w-[25rem] flex-shrink-0 `}
               >
               
-                  <div className='relative'>
+                  <div className='relative overflow-hidden group'>
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-[16rem] md:h-[20rem] lg:h-[25rem] object-cover "
+                    className="w-full h-[16rem] md:h-[20rem] lg:h-[25rem] object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                    <div className='absolute inset-0 bg-[#000]/70 hover:bg-[#000]/0'></div>
+                    <div className='absolute inset-0 '></div>
         
           
 </div>

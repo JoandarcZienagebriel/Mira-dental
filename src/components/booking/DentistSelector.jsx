@@ -18,8 +18,8 @@ export default function DentistSelector({ value, onChange }) {
             onClick={() => onChange(d.name)}
             className={`p-3 md:p-6 rounded-md border transition-all text-center text-sm xl:text-[1.1rem] lg:p-12 ${
               value === d.name
-                ? 'border-[#355097] bg-[#4f772d] text-[#fff]'
-                : 'border-[#000] text-[#273138] hover:border-[#4f772d]'
+                ? 'border-accent bg-accent text-[#fff]'
+                : 'border-[#000] text-[#273138] hover:border-accent hover:bg-card '
             }`}
           >
             <img

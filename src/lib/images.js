@@ -1,4 +1,4 @@
-import doc1 from '../assets/img/doc1.avif';
+import doc1 from '../assets/img/doc1.jpg';
 import doc2 from '../assets/img/doc2.avif';
 import restore from '../assets/img/restorative.avif';
 import receptionist from '../assets/img/receptionist.avif';
@@ -8,6 +8,9 @@ import veneer from '../assets/img/veneer.avif';
 import otto from '../assets/img/otto.avif';
 import sei from '../assets/img/sei.avif';
 import nove from '../assets/img/nove.avif';
+import tre from '../assets/img/3.avif';
+import check from '../assets/img/checkup.avif';
+import retainer from '../assets/img/retainer.avif';
 export const IMAGES = {
   
   hero: {
@@ -49,3 +52,11 @@ export const ABOUT_SLIDER =[
    },
     
 ]
+export const HERO_SLIDES = [
+ 
+   {
+    image: check,
+    
+  },
+   
+];

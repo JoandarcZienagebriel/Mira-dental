@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Star, Clock } from 'lucide-react';
@@ -7,9 +6,39 @@ import locationbg from '../assets/img/receptionist.avif'
 
 export default function Location() {
   return (
-    <div>
+    <div id='location'>
+       <section className="py-4 pt-24 left-0 right-0 md:pt-16">
+                    
+                    <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                      >
+                       
+                        <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#132a13] mb-4">
+                         LOCATION
+                        </h1>
+                         <div className="inline-flex flex-col items-center justify-center mx-auto mt-2">
+      <Link to="/booking" className="bg-[#4f772d] rounded-[4rem] text-white px-6 py-3 text-[.9rem] hover:bg-[#4f772d]">
+                                                      Book an appointment
+                                                    </Link>
+                                                     <p className='flex justify-center items-center gap-2 py-2 text-[.8rem]'>
+                or 
+                <a
+                href="tel:09336495034"
+                className="flex items-center gap-2 md:text-sm xl:text-[1rem] font-medium transition-colors"
+              >
+                <Phone className="w-3.5 h-3.5" />
+              +251 933 649 5034
+              </a>
+              </p>
+                                     </div>
+                      </motion.div>
+                    </div>
+                  </section>
       {/* Header */}
-      <section className="relative py-12 md:py-20 bg-center bg-cover bg-no-repeat"style={{backgroundImage:`url(${locationbg})`}}>
+      <section className="relative py-12 left-0 right-0 md:py-20 bg-center bg-cover bg-no-repeat"style={{backgroundImage:`url(${locationbg})`}}>
          <div className='absolute inset-0 bg-[#000]/20'></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
@@ -17,7 +46,7 @@ export default function Location() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-[#000] text-sm font-semibold tracking-widest uppercase mb-3">Find Us</p>
+            
             <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#132a13] mb-4">
               Our Location
             </h1>
@@ -115,25 +144,7 @@ export default function Location() {
               </div>
             </motion.div>
 
-            {/* Map */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="rounded-lg overflow-hidden h-80 md:h-full min-h-[360px]"
-            >
-              <iframe
-                title="Mira Dental Clinic Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5!2d38.74!3d9.02!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sMira%20Dental%20Clinic!5e0!3m2!1sen!2set!4v1700000000000!5m2!1sen!2set"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </motion.div>
+        
           </div>
         </div>
       </section>

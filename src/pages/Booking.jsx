@@ -118,8 +118,7 @@ export default function Booking() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-[#4f772d] text-sm font-semibold tracking-widest uppercase mb-3">Appointments</p>
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#132a13] mb-3">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-primary mb-3">
               Book Your Visit
             </h1>
             <p className="text-[#273138] text-base md:text-md">
@@ -130,7 +129,7 @@ export default function Booking() {
       </section>
 
       {/* Progress */}
-      <div className="bg-[#FAF9F7] border-b border-[#DDD6CE]">
+      <div className="bg-[#FAF9F7] border-b border-[#000]">
         <div className="max-w-3xl mx-auto px-4 md:px-6 py-4">
           <div className="flex items-center justify-between">
             {['Service', 'Dentist', 'Date & Time', 'Your Info'].map((label, i) => (
@@ -138,8 +137,8 @@ export default function Booking() {
                 <div
                   className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-semibold transition-colors ${
                     i <= step
-                      ? 'bg-[#4f772d] text-white'
-                      : 'bg-[#DDD6CE] text-[#A89F97]'
+                      ? 'bg-accent text-white'
+                      : 'bg-card text-[#fff]'
                   }`}
                 >
                   {i + 1}
@@ -149,7 +148,7 @@ export default function Booking() {
                 }`}>
                   {label}
                 </span>
-                {i < 3 && <div className="hidden sm:block w-8 md:w-16 h-px bg-[#DDD6CE] ml-2" />}
+                {i < 3 && <div className="hidden sm:block w-8 md:w-16 h-px bg-[#000] ml-2" />}
               </div>
             ))}
           </div>
@@ -245,8 +244,8 @@ export default function Booking() {
               disabled={step === 0}
               className={`px-5 py-2.5 text-sm font-medium rounded-md transition-colors ${
                 step === 0
-                  ? 'text-[#DDD6CE] cursor-not-allowed'
-                  : 'text-[#3A3430] hover:bg-[#F1EEE9]'
+                  ? 'text-[#000] cursor-not-allowed'
+                  : 'text-[#000] hover:bg-accent'
               }`}
             >
               Back
@@ -254,7 +253,7 @@ export default function Booking() {
             <button
               onClick={handleNext}
               disabled={!canNext()}
-              className="px-8 py-2.5 bg-[#4f772d] text-white text-sm font-semibold rounded-md hover:bg-[#132a13] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+              className="px-8 py-2.5 bg-accent text-white text-sm font-semibold rounded-[6rem] hover:-translate-y-1 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {step === 3 ? 'Review & Confirm' : 'Continue'}
             </button>

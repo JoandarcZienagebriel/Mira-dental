@@ -32,8 +32,8 @@ export default function TimeSlotGrid({ slots, value, onChange, isLoading }) {
             onClick={() => onChange(slot)}
             className={`py-2.5 px-2 rounded-md border text-sm font-medium transition-all ${
               value?.start === slot.start
-                ? 'border-[#4f772d] bg-[#4f772d] text-white'
-                : 'border-[#000] text-[#273138] hover:border-[#4f772d]'
+                ? 'border-accent bg-accent text-white'
+                : 'border-[#000] text-[#273138] hover:border-accent hover:bg-card'
             }`}
           >
             {slot.label}

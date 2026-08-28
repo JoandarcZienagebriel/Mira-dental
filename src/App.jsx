@@ -10,8 +10,8 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-import Location from './pages/Location';
 import Booking from './pages/Booking';
+import LocationSection from "./pages/LocationSection";
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -39,9 +39,8 @@ const AuthenticatedApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
-        
-        <Route path="/location" element={<Location />} />
         <Route path="/booking" element={<Booking />} />
+          <Route path="/location" element={<LocationSection />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

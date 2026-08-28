@@ -26,8 +26,7 @@ export default function AboutPreview() {
                         i === 0 ? 'md:col-span-2 md:row-span-2' : ''
                       }`}
                     >
-           
-              
+    
                       <div
                       style={{backgroundImage:`URL(${img.image})`}}
                         alt={`Clinic interior ${i + 1}`}
@@ -36,9 +35,7 @@ export default function AboutPreview() {
                         }`}
                       >
         
-                        
-                         <h2 className='hidden text-white group-hover:block pb-4 text-2xl md:text-3xl lg:text-4xl xl:whitespace-nowrap'>{img.title}</h2>
-                           <ul className='hidden group-hover:flex flex-col gap-2  whitespace-nowrap text-white text-sm lg:text-lg'>
+                         <ul className='hidden group-hover:flex flex-col gap-2  whitespace-nowrap text-white text-sm lg:text-lg'>
                         {img.subcategories.map((subcategory, index) => (
                               <li key={index} className='flex items-center gap-2'> 
                    <Check strokeWidth={5} className="w-5 h-5 text-[green] font-bold shrink-0" />
@@ -46,7 +43,7 @@ export default function AboutPreview() {
                   </li>
                             ))}
 
-              </ul>        </div>
+              </ul>    </div>
                     </motion.button>
                   ))}
                 </div>

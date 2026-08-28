@@ -32,29 +32,29 @@ export default function ConfirmationModal({ open, onClose, onConfirm, booking, i
 
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-sm">
-                <Stethoscope className="w-4 h-4 text-[#4f772d] shrink-0" />
+                <Stethoscope className="w-4 h-4 text-[#000] shrink-0" />
                 <span className="text-[#0F1A20]">Service:</span>
                 <span className="text-[#273138] font-medium">{booking.service}</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <User className="w-4 h-4 text-[#4f772d] shrink-0" />
+                <User className="w-4 h-4 text-[#000] shrink-0" />
                 <span className="text-[#0F1A20]">Dentist:</span>
                 <span className="text-[#273138] font-medium">{booking.dentist}</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <Calendar className="w-4 h-4 text-[#4f772d] shrink-0" />
+                <Calendar className="w-4 h-4 text-[#000] shrink-0" />
                 <span className="text-[#0F1A20]">Date:</span>
                 <span className="text-[#273138] font-medium">
                   {booking.date ? format(new Date(booking.date), 'EEEE, MMMM d, yyyy') : ''}
                 </span>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <Clock className="w-4 h-4 text-[#4f772d] shrink-0" />
+                <Clock className="w-4 h-4 text-[#000] shrink-0" />
                 <span className="text-[#0F1A20]">Time:</span>
                 <span className="text-[#273138] font-medium">{booking.timeLabel}</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <User className="w-4 h-4 text-[#4f772d] shrink-0" />
+                <User className="w-4 h-4 text-[#000] shrink-0" />
                 <span className="text-[#0F1A20]">Patient:</span>
                 <span className="text-[#273138] font-medium">{booking.patient_name}</span>
               </div>
@@ -63,14 +63,14 @@ export default function ConfirmationModal({ open, onClose, onConfirm, booking, i
             <div className="flex gap-3">
               <button
                 onClick={onClose}
-                className="flex-1 py-3 border border-[#4f772d] text-[#0F1A20] font-semibold text-sm rounded-md hover:bg-[#F1EEE9] transition-colors"
+                className="flex-1 py-3 border border-[#000] text-[#0F1A20] font-semibold text-sm rounded-md hover:bg-card hover:border-accent transition-colors"
               >
                 Cancel
               </button>
               <button
                 onClick={onConfirm}
                 disabled={isSubmitting}
-                className="flex-1 py-3 bg-[#4f772d] text-white font-semibold text-sm rounded-md hover:bg-[#132a13] transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
+                className="flex-1 py-3 bg-accent text-white font-semibold text-sm rounded-[6rem] transition-colors disabled:opacity-60 flex items-center justify-center gap-2 hover:-translate-y-1 transition-all duration-300"
               >
                 {isSubmitting ? (
                   <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
