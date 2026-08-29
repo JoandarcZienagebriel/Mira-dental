@@ -40,7 +40,7 @@ const reviews = [
 
 export default function ReviewsSection() {
   
-  gsap.registerPlugin(ScrollTrigger);
+  /*gsap.registerPlugin(ScrollTrigger);
 const reviewRef = useRef(null);
 useEffect(()=>{
   const el = reviewRef.current;
@@ -59,7 +59,7 @@ useEffect(()=>{
   return ()=>{
     animation.kill();
   }
-}, []);
+}, []);*/
 
   return (
     
@@ -78,7 +78,7 @@ useEffect(()=>{
           </h2>
         </motion.div>
 {/* reviews grid */}
-      <section className="py-8 md:py-12" ref={reviewRef}>
+      <section className="py-8 md:py-12">
        
           <div className='lg:overflow-x-[60rem] hide-scrollbar'>
          

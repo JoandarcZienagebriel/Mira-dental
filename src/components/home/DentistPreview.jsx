@@ -1,42 +1,49 @@
 import React, { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { IMAGES } from '@/lib/images';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import {SERVICES} from '../../lib/servicesData';
+import { backIn, backInOut, easeIn } from 'framer-motion';
+ gsap.registerPlugin(ScrollTrigger)
 
 export default function DentistsSection() {
 
-  gsap.registerPlugin(ScrollTrigger)
-  const serviceRef = useRef(null);
-useEffect(()=>{
-  const el = serviceRef.current;
-  const animation = gsap.to(el,{
- scale:0.9,
-    scrollTrigger:{
-      trigger: el,
-      scrub: true,
-      start:'top 20%',
-      end:'+=1000',
-      pin: true,
-      markers: true,
-    }
-  })
-  return()=>{
-    animation.kill();
-  }
-})
+ 
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const elements = gsap.utils.toArray('.service-item');
+const el = sectionRef.current;
+      elements.forEach((el) => {
+        gsap.to(el, {
+          scale: 0.9,
+          ease: easeIn,
+          duration:2,
+          scrollTrigger: {
+            trigger: el,
+            scrub: 1,
+            start: 'top 20%',
+            end: '+=1000',
+            pin: true,
+            markers: true,
+          },
+        });
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
- <section className="py-20 md:py-42 lg:py-48">
+ <section className="py-20 md:py-42 lg:py-48" ref={sectionRef}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
        
             {SERVICES.map((service, i) => (
               <div
                 key={service.title}
         
-                className={`grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center lg:h-[30rem] ${
+                className={`service-item grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center lg:h-[30rem] ${
                   i % 2 === 1 ? 'md:direction-rtl' : ''
                 }`}  
               >

@@ -73,3 +73,10 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.start {
+  color: #cce3de;
+}
+
+.end {
+  color: #353238;
+}

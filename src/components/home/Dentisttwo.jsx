@@ -4,38 +4,30 @@ import { Phone, Section} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { IMAGES } from '@/lib/images';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger.js';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';
 import dentist_two from '../../assets/img/senior.avif';
 
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 export default function DentistSectionTwo() {
 
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const paraRef = useRef(null);
 const aboutRef1 = useRef(null);
 
 useEffect(() => {
-
+const ctx= gsap.context(()=>{
+ const el1 = paraRef.current;
   const el = aboutRef1.current;
- const animation = gsap.to(el, {
 
-     scrollTrigger: {
+ ScrollTrigger.create( {
       trigger: el,
       scrub: true,
-           pin:true,
+      pin:true,
       start:'top 10%',
       end:'+=1000',
-    }})
- 
-return()=>{
-  animation.kill();
-};
-},[]);
-useEffect(() => {
+    });
 
-  const el1 = paraRef.current;
-
- const animation = gsap.to(el1, {
+ gsap.to(el1, {
   
       text: {
       value: el1.textContent,
@@ -47,14 +39,17 @@ useEffect(() => {
       scrub: 1,
      start:'top top',
        end:'+=1000',
+},
+});
+}, aboutRef1);
 
+    return()=> ctx.revert();
 
-    }})
- 
-return()=>{
-  animation.kill();
-};
 },[]);
+ 
+
+
+
 
 
 

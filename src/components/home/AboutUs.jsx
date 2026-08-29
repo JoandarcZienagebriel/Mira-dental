@@ -1,37 +1,29 @@
 import { useState, useEffect, useCallback, useRef} from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger.js';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';
 import team from '../../assets/img/team.jpg';
 
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 export default function DentistSectionOne() {
 
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const paraRef = useRef(null);
-const aboutRef = useRef(null)
+const aboutRef = useRef(null);
+
 useEffect(() => {
-
-  const el = aboutRef.current;
- const animation = gsap.to(el, {
-
-     scrollTrigger: {
-      trigger: el,
-      scrub: true,
-           pin:true,
-      start:'top 10%',
-      end:'+=1000',
-    }})
- 
-return()=>{
-  animation.kill();
-};
-},[]);
-useEffect(() => {
-
+const ctx= gsap.context(()=>{
+const el = aboutRef.current;
   const el1 = paraRef.current;
 
- const animation = gsap.to(el1, {
+    ScrollTrigger.create( {
+    trigger: el,
+    scrub: true,
+     pin:true,
+      start:'top 10%',
+      end:'+=1000',
+    });
+ gsap.to(el1, {
   
       text: {
       value: el1.textContent,
@@ -44,11 +36,12 @@ useEffect(() => {
      start:'top top',
        end:'+=1000',
 
-    }})
+    },
+  });
+},aboutRef);
  
-return()=>{
-  animation.kill();
-};
+return()=>ctx.revert();
+
 },[]);
 
 

@@ -32,7 +32,7 @@ export default function ProcedureSection() {
           <div className="mx-auto lg:grid grid-cols-4 items-center">
             {PROCEDURE.map((service, i) => (
               <div
-                className={`flex flex-col gap-8 bg-[#cce3de] mb-4 border-[#cce3de] border-2 rounded-[1rem] lg:w-[18rem] lg:h-[20rem] flex-shrink-0 p-4 `}
+                className={`flex flex-col gap-8 bg-[#cce3de] mb-4 border-[#cce3de] border-2 rounded-[1rem] lg:w-[18rem] lg:h-[20rem] flex-shrink-0 p-4`}
               >
         <h2 className="font-heading text-2xl md:text-xl font-semibold text-accent">
                     {service.title}
