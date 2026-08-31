@@ -21,7 +21,7 @@ const el = aboutRef.current;
       start:'top 20%',
       end:'+=1000',
           pin:true,
-          markers:true,   
+  
     }})
 }, aboutRef);
  

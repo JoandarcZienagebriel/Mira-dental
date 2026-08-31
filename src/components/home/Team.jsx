@@ -64,7 +64,7 @@ return()=>{
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6 }}
-            className="mt-[13rem] md:border-white md:border-4 order-2 p-4 md:order-1 md:w-1/2 md:bg-card/50 md:p-10 lg:px-12 lg:py-12 md:m-auto"
+            className="mt-[17rem] md:border-white md:border-4 order-2 p-4 md:order-1 md:w-1/2 md:bg-card/50 md:p-10 md:w-[30rem] lg:px-12 lg:py-12 md:m-auto"
           >
          
             <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-6 leading-tight">

@@ -132,8 +132,8 @@ useEffect(()=>{
                 to={item.path}
                 className={`block px-4 py-3 text-base font-medium rounded-md transition-colors ${
                   location.pathname === item.path
-                    ? 'bg-[#4f772d]/10 text-[#4f772d]'
-                    : 'text-[#0F1A20] hover:bg-[#F5F5F4]'
+                    ? 'bg-card text-[#fff]'
+                    : 'text-[#0F1A20] hover:bg-card hover:border-accent'
                 }`}
               >
                 {item.label}

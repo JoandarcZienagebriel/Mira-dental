@@ -1,8 +1,6 @@
 
 import { Link } from 'react-router-dom';
 import { Phone, MapPin, Clock, Mail } from 'lucide-react';
-import { IMAGES } from '@/lib/images';
-import { motion } from 'framer-motion';
 import Map from '../components/home/Map';
 import Reviews from '../components/home/ReviewsSection';
 
