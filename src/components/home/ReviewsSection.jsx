@@ -32,7 +32,7 @@ const reviews = [
     name: 'Yors',
     time: '1 month ago',
     rating: 5,
-    text: "Clean clinic, welcoming team, and outstanding dental care. I'll definitely be back.",
+    text: "Very professional and caring staff. The clinic is clean and modern. Highly recommend!",
   },
  
    

@@ -1,10 +1,10 @@
 import { IMAGES } from './images';
 import pedi from '../assets/img/s6.jpg';
-import implant from '../assets/img/implant.jpg';
-import one from '../assets/img/s1.jpg';
+import implant from '../assets/img/implant.avif';
+import one from '../assets/img/s1.avif';
 import due from '../assets/img/2.avif';
 import tre from '../assets/img/9.jpg';
-import five from '../assets/img/5.webp'
+import five from '../assets/img/5.avif'
 import four from '../assets/img/tre.jpg';
 import restorative from '../assets/img/restorative.avif';
 import veneer from '../assets/img/veneer.avif';
@@ -12,9 +12,9 @@ import us from '../assets/img/us.avif';
 import six from '../assets/img/3.jpg';
 import seven from '../assets/img/4.jpg';
 import braces from '../assets/img/braces.avif';
-import toothache from '../assets/img/toothache.jpg';
-import check from '../assets/img/check.jpg';
-
+import toothache from '../assets/img/toothache.avif';
+import check from '../assets/img/check.avif';
+import eight from '../assets/img/1.avif';
 export const SERVICES = [
   {
     title: 'Check-Up & Cleaning',
@@ -86,7 +86,7 @@ export const BEFORE = [
      image: five,
   },
   {
-     image: one,
+     image: eight
   },
   {
      image: four,

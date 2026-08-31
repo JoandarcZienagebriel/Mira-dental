@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Import, Phone} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { IMAGES } from '@/lib/images';
-import sei from '../assets/img/sei.avif';
 import DentistSectionOne from '../components/home/AboutPreview';
 import DentistSectionTwo from '../components/home/Dentisttwo';
 import { ABOUT_SLIDER } from '@/lib/images';

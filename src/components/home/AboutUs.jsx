@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';
-import team from '../../assets/img/team.jpg';
+import team from '../../assets/img/team.avif';
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 export default function DentistSectionOne({serviceRef}) {
