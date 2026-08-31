@@ -81,7 +81,7 @@ useEffect(()=>{
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-body text-xl text-[#000] text-left md:text-xl md:w-[55rem] lg:text-2xl xl:text-5xl font-bold"
+          className="font-body text-2xl text-[#000] text-left md:text-4xl lg:w-[55rem] xl:text-5xl font-bold"
         >
         GET A LIFE CHANGING SMILE, YOU'RE JUST ONE APPOINTMENT AWAY.
         </motion.h1>
@@ -91,13 +91,13 @@ useEffect(()=>{
          <div className='flex gap-4'>
            <Link
             to="/booking"
-            className="font-body bg-accent rounded-[6rem] text-white px-8 py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
+            className="font-body bg-accent px-3 py-5 rounded-[6rem] text-center text-white md:px-8 md:py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
           >
             Book an appointment
           </Link>
 <Link
             to="/booking"
-            className="font-body bg-accent rounded-[6rem] text-white px-8 py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
+            className="font-body bg-accent px-2 py-5 rounded-[6rem] text-center text-white md:px-8 md:py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
           >
             Contact Us
           </Link>

@@ -1,9 +1,6 @@
-
 import restore from '../assets/img/restorative.avif';
-
 import general from '../assets/img/general.avif';
 import veneer from '../assets/img/veneer.avif';
-import otto from '../assets/img/otto.avif';
 import sei from '../assets/img/aboutbg.avif';
 import nove from '../assets/img/nove.avif';
 import check from '../assets/img/checkup.avif';

@@ -49,7 +49,7 @@ useEffect(()=>{
 
   return (
 
-     <header className="fixed top-0 left-0 right-0 z-50 md:pb-2 bg-primary ">
+     <header className="fixed top-0 left-0 right-0 z-50 w-screen md:pb-2 bg-primary ">
       {/* Desktop top bar */}
       <div className='nav' >
         <p className='flex flex-col justify-center items-center gap-2 py-2 text-[.8rem] text-white md:flex-row  bg-card'>
@@ -66,7 +66,7 @@ useEffect(()=>{
      
 
       {/* Main navbar */}
-      <nav className="test max-w-7xl mx-auto px-6 md:px-1 md:mx-[10px] h-16 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 md:px-1 md:mx-[10px] h-16 flex items-center justify-between">
         <div className="flex items-center gap-1">
           {/* Mobile hamburger */}
           <button
@@ -112,9 +112,9 @@ useEffect(()=>{
         
           <Link
             to="/booking"
-            className="border border-primary whitespace-nowrap rounded-md bg-primary text-white px-2 py-2 text-xs font-semibold"
+            className="border border-primary whitespace-nowrap rounded-[6rem] bg-surface text-[#000] px-2.5 py-3 text-xs font-semibold"
           >
-            Book & Smile
+          Schedule Online
           </Link>
         </div>
       </nav>

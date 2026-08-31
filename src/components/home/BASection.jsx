@@ -9,7 +9,7 @@ import { BEFORE} from '@/lib/servicesData';
 
 export default function DentistsSection() {
   return (
-    <section className="relative py-16 md:py-24 mt-16 bg-[#f6fff8]">
+    <section className="relative py-4 md:py-16 mt-16 bg-[#f6fff8]">
        
       <div className="relative max-w-7xl mx-auto px-4 md:px-6">
         <motion.div
@@ -26,7 +26,7 @@ export default function DentistsSection() {
         </motion.div>
 
  {/* Services grid */}
-      <section className="py-8 md:py-12">
+      <section className="">
        
           <div className=''>
           <div className="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -34,7 +34,7 @@ export default function DentistsSection() {
 
               <div
                
-                className={`grid grid-cols-1 items-center text-[#353238] mb-8 lg:w-[25rem] flex-shrink-0 `}
+                className={`grid grid-cols-1 items-center text-[#353238] mb-8 flex-shrink-0 `}
               >
               
                   <div className='relative overflow-hidden group'>

@@ -13,11 +13,12 @@ export default function Home() {
 const serviceRef = useRef(null);
 const aboutRef = useRef(null);
 const aboutRef1 = useRef(null)
+const logoRef = useRef(null);
   return (
     <div>
       <HeroSection />
-     <DentistsSection serviceRef={serviceRef} />
-       <AboutUs/>
+     <DentistsSection triggerRef={logoRef} serviceRef={serviceRef} />
+       <AboutUs triggerRef={serviceRef}/>
   <BeforeAfter/>
   <Procedure/>
    <LocationSection/>

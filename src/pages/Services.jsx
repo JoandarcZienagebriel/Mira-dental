@@ -8,7 +8,7 @@ import ServiceSection from '../components/home/DentistPreview'
 export default function Services() {
   return (
     <div>
-       <section className="py-4 pt-24 left-0 right-0 md:pt-16">
+       <section className="py-4 pt-24 left-0 right-0 md:pt-16 bg-header">
               
               <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
                 <motion.div
@@ -17,7 +17,7 @@ export default function Services() {
                   transition={{ duration: 0.6 }}
                 >
                  
-                  <h1 className ="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4">
+                  <h1 className ="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#fff] mb-4">
                     WHAT WE OFFER
                   </h1>
                    <div className="inline-flex flex-col items-center justify-center mx-auto mt-2">
@@ -27,7 +27,7 @@ export default function Services() {
         >
           Book Appointment
         </Link>
-                                               <p className='flex justify-center items-center gap-2 py-2 text-[.8rem]'>
+         <p className='flex justify-center items-center gap-2 py-2 text-[.8rem]'>
           or 
           <a
           href="tel:09336495034"

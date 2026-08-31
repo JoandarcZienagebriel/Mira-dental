@@ -6,7 +6,7 @@ import TextPlugin from 'gsap/TextPlugin';
 import team from '../../assets/img/team.jpg';
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
-export default function DentistSectionOne() {
+export default function DentistSectionOne({serviceRef}) {
 
 const paraRef = useRef(null);
 const aboutRef = useRef(null);
@@ -14,17 +14,28 @@ const aboutRef = useRef(null);
 useEffect(() => {
 const ctx= gsap.context(()=>{
 const el = aboutRef.current;
-  const el1 = paraRef.current;
-
-    ScrollTrigger.create( {
+  gsap.to( el, {
+      scrollTrigger:{
     trigger: el,
     scrub: true,
-     pin:true,
-      start:'top 10%',
+      start:'top 20%',
       end:'+=1000',
-    });
- gsap.to(el1, {
-  
+          pin:true,
+          markers:true,   
+    }})
+}, aboutRef);
+ 
+return()=>ctx.revert();
+
+},[]);
+
+
+
+
+useEffect(()=>{
+  const el1 = paraRef.current;
+  const animation = gsap.to(el1, {
+
       text: {
       value: el1.textContent,
       oldClass: "start",
@@ -33,16 +44,16 @@ const el = aboutRef.current;
      scrollTrigger: {
       trigger: el1,
       scrub: 1,
-     start:'top top',
+     start:'top 20%',
        end:'+=1000',
+ 
 
     },
   });
-},aboutRef);
- 
-return()=>ctx.revert();
-
-},[]);
+  return ()=>{
+    animation.kill();
+  }
+},[])
 
 
   return (
@@ -64,7 +75,7 @@ return()=>ctx.revert();
        Meet Our Team
           </h2>
     
-                  <p className='font-body text-card text-[1rem] md:text-[1.5rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
+                  <p className='font-body text-card text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
                   As your dental health professionals, we want you to be confident knowing that we are a team of highly trained and skilled
                    clinicians.  We pride ourselves in providing the care you need to keep your smile healthy.  To give you the best possible service and results,
                     we are committed to continual education and learning.  Building a foundation of trust by treating our patients as special individuals is vital to our success.

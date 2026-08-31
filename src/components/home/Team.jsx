@@ -53,27 +53,27 @@ return()=>{
   return (
 
 
-<section className='lg:h-[60rem]' ref={aboutRef}>
+<section className='' ref={aboutRef}>
 
   
      
-        <div className="flex flex-col items-center gap-0 md:h-[60rem] w-screen" style={{backgroundImage:`url(${team})`, backgroundRepeat:'no-repeat',backgroundSize: '100%'}}
+        <div className="flex flex-col items-center gap-0 h-[30rem] lg:h-[60rem] w-screen" style={{backgroundImage:`url(${team})`, backgroundRepeat:'no-repeat',backgroundSize: '100%'}}
        >
         <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6 }}
-            className="border-white border-4 order-2 p-4 md:order-1 text-lg  md:w-1/2 md:bg-card/50 md:p-10 lg:px-12 lg:py-12 md:m-auto"
+            className="mt-[13rem] md:border-white md:border-4 order-2 p-4 md:order-1 md:w-1/2 md:bg-card/50 md:p-10 lg:px-12 lg:py-12 md:m-auto"
           >
          
             <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-6 leading-tight">
-              We Care 
+             Our Dental Team
             </h2>
-            <p className="text-card text-[1rem] md:text-[1.5rem] font-bold leading-relaxed" ref={paraRef}>
-              At Dental Clinic, we believe every patient deserves personalized, gentle dental care in a warm and welcoming environment. 
-              At Dental Clinic, we believe every patient deserves personalized, gentle dental care in a warm and welcoming environment. 
-            
+            <p className="text-card text-[1rem] mt-[-.5em] md:text-[1.2rem] xl:text-[1.4rem] font-bold leading-relaxed" ref={paraRef}>
+            Behind every successful treatment is a dedicated team. Our dental assistants and support staff work closely with our doctors to ensure every visit is smooth.
+             From welcoming patients to assisting during procedures and coordinating follow-up care, our team is committed 
+             to making every patient feel well cared for.
             </p>
            
            

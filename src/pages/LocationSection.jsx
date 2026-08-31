@@ -7,11 +7,11 @@ import location from '../assets/img/receptionist.avif';
 
 export default function LocationSection() {
   return (
-    <section className="flex flex-col items-center justify-center h-[100vh] relative" id='location' style={{backgroundImage: `url(${location})`, backgroundRepeat: 'no-repeat', backgroundSize: '100%'}}>
+    <section className="flex flex-col items-center justify-start h-[90vh] lg:h-[100vh] relative" id='location' style={{backgroundImage: `url(${location})`, backgroundRepeat: 'no-repeat', backgroundSize: '100%'}}>
  
-<div className='border-white border-4 w-[40rem] h-[34rem] mx-auto bg-card/50'>
+<div className=' md:border-white md:border-4 md:w-[28rem] md:h-[30rem] my-4 lg:my-auto lg:w-[40rem] lg:h-[34rem] mx-auto md:bg-card/50'>
   
-                <div className="max-w-4xl mx-auto px-4 md:px-6 text-center py-4 pt-24 md:pt-16">
+                <div className="max-w-4xl mx-auto px-4 md:px-6 text-center py-4 md:pt-16">
                           <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -28,17 +28,12 @@ export default function LocationSection() {
         >
           Book an Appointment
         </Link>
-    
-                                         </div>
+      </div>
                           </motion.div>
-             
                       </div>
-
-     
             <div
-              
-              className='text-[#000] flex flex-col items-center'
-            >
+              className='text-[#000] flex flex-col items-center text-[1rem] md:text-[1.2rem] mt-[7.5rem] md:mt-[-1rem] md:mt-[0rem]'
+            > 
             
               <div className="relative space-y-5 mb-4 p-4 md:pl-[6rem]">
       

@@ -111,17 +111,17 @@ export default function Booking() {
   return (
     <div>
       {/* Header */}
-      <section className="py-10 md:py-16 bg-[#F5F5F4]">
+      <section className="py-10 md:py-16 bg-header">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-          <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-primary mb-3">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-6xl font-semibold text-[#fff] mb-3">
               Book Your Visit
             </h1>
-            <p className="text-[#273138] text-base md:text-md">
+            <p className="text-[#000] text-base md:text-md">
               Select a service, choose your dentist, and pick a time that works for you.
             </p>
           </motion.div>

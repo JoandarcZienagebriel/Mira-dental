@@ -1,10 +1,7 @@
 import { IMAGES } from './images';
-import diagnostic from '../assets/img/4.avif';
-import whitening from '../assets/img/m.avif';
-import pedi from '../assets/img/child.avif';
-import implant from '../assets/img/implant.avif';
-import align from '../assets/img/align.avif';
-import one from '../assets/img/1.jpg';
+import pedi from '../assets/img/s6.jpg';
+import implant from '../assets/img/implant.jpg';
+import one from '../assets/img/s1.jpg';
 import due from '../assets/img/2.avif';
 import tre from '../assets/img/9.jpg';
 import five from '../assets/img/5.webp'
@@ -14,39 +11,43 @@ import veneer from '../assets/img/veneer.avif';
 import us from '../assets/img/us.avif';
 import six from '../assets/img/3.jpg';
 import seven from '../assets/img/4.jpg';
+import braces from '../assets/img/braces.avif';
+import toothache from '../assets/img/toothache.jpg';
+import check from '../assets/img/check.jpg';
+
 export const SERVICES = [
   {
     title: 'Check-Up & Cleaning',
-    description: 'Keep your teeth and gums healthy with regular check-ups, professional cleaning and prevention.',
-    image: diagnostic,
+    description: 'Regular check-ups help us find dental problems early and keep your teeth and gums healthy. Our professional cleaning removes plaque and buildup, while we also give you simple advice to care for your teeth at home.',
+  image: check,
   },
   {
     title: 'Fix a Damaged Tooth',
-    description: 'Repair teeth that are broken, cracked, worn or affected by decay.',
+    description: 'Broken, cracked, worn or decayed teeth can affect your comfort and your smile. We provide treatment to repair and protect damaged teeth. Depending on your needs, treatment may include fillings, crowns or other options to restore the tooth and help you use it normally again. ',
     
-    image: whitening,
+    image: toothache,
   },
  
    {
     title: 'Improve My Smile',
-    description: 'Enhance the appearance of your smile with veneers, bonding, whitening, orthodontics and more.',
-    image: align,
+    description: 'If you want to feel more confident about your smile, we offer a range of cosmetic dental treatments. These include whitening, veneers, bonding and orthodontics, with options chosen to suit your smile and your needs. ',
+    image: braces,
   },
 
   {
     title: 'Replace Missing Teeth',
-    description: 'Permanent, natural-looking dental implants to replace missing teeth and restore your smile. We also offer dentures and dental bridges as alternatives, with personalized consultations to find the best solution for you.',
+    description: 'Missing teeth can make eating, speaking and smiling more difficult. We offer dental implants, bridges and dentures to replace missing teeth. We will discuss your options with you and help find a solution that looks natural, feels comfortable and works for you.',
     image: implant,
   },
 
 {
 title:'Gum Problems',
-description:'Get treatment for bleeding, swollen, sore or receding gums and other gum problems.',
+description:'Bleeding, swollen, sore or receding gums can be signs of gum problems that should not be ignored. We can check the cause and provide the right treatment to improve your gum health and prevent the problem from getting worse.',
 image: one,
 },
   {
     title: 'Paediatric & Emergency Dental Care',
-    description: 'Gentle, child-friendly dental care including first visits, cavity prevention, and sealants. We also provide emergency dental services for urgent issues like severe toothaches, broken teeth, and dental trauma.',
+    description: 'We provide gentle and friendly dental care for children, including first visits, check-ups, cavity prevention and sealants. For urgent problems, we also offer emergency dental care for severe toothaches, broken teeth and dental injuries, helping you get the care you need quickly.',
     image: pedi,
   },
 ];
@@ -79,6 +80,7 @@ export const BEFORE = [
   },
   {
      image: tre,
+
   },
   {
      image: five,

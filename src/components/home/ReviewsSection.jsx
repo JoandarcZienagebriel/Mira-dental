@@ -38,32 +38,29 @@ const reviews = [
    
 ];
 
-export default function ReviewsSection() {
-  
-  /*gsap.registerPlugin(ScrollTrigger);
-const reviewRef = useRef(null);
-useEffect(()=>{
-  const el = reviewRef.current;
-  const animation = gsap.to(el, {
-    x:-450,
-    scrollTrigger:{
-      trigger:el,
-      scrub: true,
-      pin:true,
-      start: 'top top',
-      end: '+=1000',
-      markers: true,
-    }
+  gsap.registerPlugin(ScrollTrigger);
 
+export default function ReviewsSection() {
+ 
+useEffect(() => {
+
+  const ctx = gsap.context(() => {
+    const items = gsap.utils.toArray('.review-item');
+
+    gsap.to(items, {
+      xPercent: -100,
+      duration: 17,
+      ease: 'none',
+      repeat: -1,
+    });
   });
-  return ()=>{
-    animation.kill();
-  }
-}, []);*/
+
+  return () => ctx.revert();
+}, []);
 
   return (
     
-    <section className="relative py-16 md:py-8">
+    <section className="hidden lg:block py-12">
       
       <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:pt-[4rem] lg:pb-[4rem]">
         <motion.div
@@ -73,12 +70,12 @@ useEffect(()=>{
           transition={{ duration: 0.6 }}
           className="text-center mb-6"
         >
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#353238] pt-[6rem] p-[2rem]                                                                                                                                                                                                                                                          ">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#353238] pt-4 ">
             Smashing reviews from our patients
           </h2>
         </motion.div>
 {/* reviews grid */}
-      <section className="py-8 md:py-12">
+      <section className="py-8 md:py-12" >
        
           <div className='lg:overflow-x-[60rem] hide-scrollbar'>
          
@@ -88,7 +85,7 @@ useEffect(()=>{
             <div
               key={review.name}
              
-              className={`flex flex-col items-start justify-center p-12 md:p-8 bg-card w-[22rem] h-[20rem]`}
+              className={`review-item flex flex-col items-start justify-center p-12 md:p-8 bg-card w-[22rem] h-[20rem]`}
           >
 
              

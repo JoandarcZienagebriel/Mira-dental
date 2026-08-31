@@ -67,14 +67,14 @@ const ctx= gsap.context(()=>{
         >
               <div className='order-2 md:order-1 p-[1.5rem] mt-16'>
           <h2 className="font-heading text-3xl text-center md:text-4xl font-semibold text-primary mb-6 leading-tight">
-       Dr. Emily
+      Dr. Hana Mekonnen
           </h2>
     
-                  <p className='font-body text-card text-[1rem] md:text-[1.5rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
-                  As your dental health professionals, we want you to be confident knowing that we are a team of highly trained and skilled
-                   clinicians.  We pride ourselves in providing the care you need to keep your smile healthy.  To give you the best possible service and results,
-                    we are committed to continual education and learning.  Building a foundation of trust by treating our patients as special individuals is vital to our success.
-                    
+                  <p className='font-body text-card text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
+                  Dr. Hana Mekonnen is an Ethiopian dentist with a background in general and cosmetic dentistry. She trained in Addis Ababa and has worked with patients
+                   across different age groups,
+                   developing a reputation for gentle, attentive care.
+                   Her focus is on creating healthy, natural-looking smiles while making every patient feel comfortable.s
 </p>
                  
                  </div>
