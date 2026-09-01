@@ -92,7 +92,7 @@ useEffect(()=>{
             <Link
               key={item.path}
               to={item.path}
-              className={`text-[1rem] text-white transition-colors font-medium lg:text-[1rem] hover:border-b-2 hover:border-accent ${
+              className={`text-[1rem] text-white transition-colors font-medium lg:text-[1rem] hover:border-b-2 hover:border-accent visited:text-card ${
                 location.pathname === item.path ? 'text-[#1E3A8A]' : 'text-[#0F1A20]'
               }`}
             >

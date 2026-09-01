@@ -1,7 +1,6 @@
 import { IMAGES } from './images';
 import pedi from '../assets/img/s6.jpg';
 import implant from '../assets/img/implant.avif';
-import one from '../assets/img/s1.avif';
 import due from '../assets/img/2.avif';
 import tre from '../assets/img/9.jpg';
 import five from '../assets/img/5.avif'
@@ -43,7 +42,7 @@ export const SERVICES = [
 {
 title:'Gum Problems',
 description:'Bleeding, swollen, sore or receding gums can be signs of gum problems that should not be ignored. We can check the cause and provide the right treatment to improve your gum health and prevent the problem from getting worse.',
-image: one,
+image: eight,
 },
   {
     title: 'Paediatric & Emergency Dental Care',

@@ -35,7 +35,8 @@ return()=>ctx.revert();
 useEffect(()=>{
   const el1 = paraRef.current;
   const animation = gsap.to(el1, {
-
+      ease: 'power2.in',
+      duration:0.8,
       text: {
       value: el1.textContent,
       oldClass: "start",

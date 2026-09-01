@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Phone } from 'lucide-react';
-import { SERVICES } from '@/lib/servicesData';
+import { Phone } from 'lucide-react';
 
-import ServiceSection from '../components/home/DentistPreview'
+import ServiceSection from '../components/home/DentistPreview';
 export default function Services() {
   return (
     <div>

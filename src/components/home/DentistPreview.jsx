@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';
 import {SERVICES} from '../../lib/servicesData';
-import { backIn, backInOut, easeIn, easeInOut } from 'framer-motion';
+import { backIn, backInOut, easeIn, easeInOut, easeOut } from 'framer-motion';
  gsap.registerPlugin(ScrollTrigger, TextPlugin)
 
 export default function DentistsSection() {
@@ -19,8 +19,8 @@ const el = sectionRef.current;
       elements.forEach((el) => {
         gsap.to(el, {
           scale: 0.9,
-          ease: easeIn,
-          duration:1,
+          ease:backIn,
+          duration:0.8,
           scrollTrigger: {
             trigger: el,
             scrub: 1,
@@ -43,7 +43,8 @@ const ctx= gsap.context(()=>{
  const el1 = paraRef.current;
  elements.forEach((el1)=>{
 gsap.to(el1, {
-  
+  ease: 'power2.in',
+  duration:0.8,
       text: {
       value: el1.textContent,
       oldClass: "start",
