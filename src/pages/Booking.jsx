@@ -111,7 +111,7 @@ export default function Booking() {
   return (
     <div>
       {/* Header */}
-      <section className="py-10 md:py-16 bg-header">
+      <section className="py-10 md:py-16 bg-header mt-[3.5rem] md:mt-[-1rem]">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

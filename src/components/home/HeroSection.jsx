@@ -81,7 +81,7 @@ useEffect(()=>{
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-body text-2xl text-[#000] text-left md:text-4xl lg:w-[55rem] xl:text-5xl font-bold"
+          className="font-body text-2xl text-primary text-left md:text-4xl lg:w-[55rem] xl:text-5xl font-bold"
         >
         GET A LIFE CHANGING SMILE, YOU'RE JUST ONE APPOINTMENT AWAY.
         </motion.h1>

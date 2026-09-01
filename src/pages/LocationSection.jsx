@@ -11,14 +11,14 @@ export default function LocationSection() {
  
 <div className=' md:border-white md:border-4 md:w-[28rem] md:h-[30rem] my-4 lg:my-auto lg:w-[40rem] lg:h-[34rem] mx-auto md:bg-card/50'>
   
-                <div className="max-w-4xl mx-auto px-4 md:px-6 text-center py-4 md:pt-16">
+                <div className="max-w-4xl mx-auto px-4 md:px-6 text-center py-4 md:pt-12">
                           <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
                           >
                            
-                            <h1 className="font-heading text-3xl text-center md:text-4xl lg:text-5xl font-semibold text-surface mb-4">
+                            <h1 className="font-heading text-3xl text-center md:text-4xl lg:text-5xl font-semibold text-surface mb-4 mt-12 md:mt-8">
                              LOCATION
                             </h1>
                              <div className="inline-flex flex-col items-center justify-center mx-auto mt-2">
@@ -32,7 +32,7 @@ export default function LocationSection() {
                           </motion.div>
                       </div>
             <div
-              className='text-[#000] flex flex-col items-center text-[1rem] md:text-[1.2rem] mt-[7.5rem] md:mt-[-1rem] md:mt-[0rem]'
+              className='text-[#000] flex flex-col items-center text-[1rem] md:text-[1.2rem] mt-[4rem] md:mt-[-1.5rem]'
             > 
             
               <div className="relative space-y-5 mb-4 p-4 md:pl-[6rem]">

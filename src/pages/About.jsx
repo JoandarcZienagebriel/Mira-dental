@@ -31,7 +31,7 @@ export default function About() {
 
   return (
     <div >
-       <section className="py-4 pt-24 left-0 right-0 md:pt-16 bg-header">
+       <section className="py-4 pt-24 left-0 right-0 md:pt-16 bg-header md:mt-[-1rem]">
               
               <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
                 <motion.div
