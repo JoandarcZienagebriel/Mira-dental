@@ -1,5 +1,5 @@
 import { IMAGES } from './images';
-import pedi from '../assets/img/s6.jpg';
+import pedi from '../assets/img/s6.avif';
 import implant from '../assets/img/implant.avif';
 import due from '../assets/img/2.avif';
 import tre from '../assets/img/9.jpg';
