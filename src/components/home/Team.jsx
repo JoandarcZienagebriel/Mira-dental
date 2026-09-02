@@ -57,7 +57,7 @@ return()=>{
 
   
      
-        <div className="flex flex-col items-center gap-0 h-[30rem] lg:h-[60rem] w-screen" style={{backgroundImage:`url(${team})`, backgroundRepeat:'no-repeat',backgroundSize: '100%'}}
+        <div className="flex flex-col items-center gap-0 h-[36rem] md:h-[30rem] lg:h-[60rem] w-screen" style={{backgroundImage:`url(${team})`, backgroundRepeat:'no-repeat',backgroundSize: '100%'}}
        >
         <motion.div
             initial={{ opacity: 0, x: -30 }}
