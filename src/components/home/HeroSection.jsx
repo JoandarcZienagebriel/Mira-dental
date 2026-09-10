@@ -90,7 +90,7 @@ useEffect(()=>{
      
          <div className='flex gap-4'>
            <Link
-            to="/booking"
+            to="https://wa.me/251936495034"
             className="font-body bg-accent px-3 py-5 rounded-[6rem] text-center text-white md:px-8 md:py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
           >
             Book an appointment

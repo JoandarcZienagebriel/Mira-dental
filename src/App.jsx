@@ -12,6 +12,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Booking from './pages/Booking';
 import LocationSection from "./pages/LocationSection";
+import BeforeAfter from './pages/beforeafter';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -19,7 +20,9 @@ const AuthenticatedApp = () => {
   if (isLoadingPublicSettings || isLoadingAuth) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-[#FAF9F7]">
-        <div className="w-8 h-8 border-4 border-[#DDD6CE] border-t-[#2CBFAE] rounded-full animate-spin"></div>
+        <div className="w-8 h-8 border-4 border-[#DDD6CE] border-t-[#2CBFAE] rounded-full animate-spin">
+        
+        </div>
       </div>
     );
   }
@@ -41,6 +44,7 @@ const AuthenticatedApp = () => {
         <Route path="/about" element={<About />} />
         <Route path="/booking" element={<Booking />} />
           <Route path="/location" element={<LocationSection />} />
+          <Route path="/beforeafter" element={<BeforeAfter/>}/>
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

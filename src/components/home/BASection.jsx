@@ -1,8 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { IMAGES } from '@/lib/images';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Import } from 'lucide-react';
 import { BEFORE} from '@/lib/servicesData';
 
 
@@ -26,9 +23,8 @@ export default function DentistsSection() {
         </motion.div>
 
  {/* Services grid */}
-      <section className="">
-       
-          <div className=''>
+
+     
           <div className="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {BEFORE.map((service, i) => (
 
@@ -52,9 +48,6 @@ export default function DentistsSection() {
              
             ))}
           </div>
-        
-        </div>
-      </section>
 
       </div>
     </section>

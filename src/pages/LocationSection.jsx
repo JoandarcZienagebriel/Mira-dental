@@ -23,7 +23,7 @@ export default function LocationSection() {
                             </h1>
                              <div className="inline-flex flex-col items-center justify-center mx-auto mt-2">
           <Link
-          to="/booking"
+          to="https://wa.me/251936495034"
           className="border border-accent rounded-[6rem] bg-accent text-white text-center px-6 py-2.5 md:px-4 py-3 lg:px-6 py-3 md:text-sm xl:text-[1rem] font-semibold hover:-translate-y-1 transition-all duration-300"
         >
           Book an Appointment

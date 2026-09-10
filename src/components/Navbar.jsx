@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-import { IMAGES } from '@/lib/images';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -9,7 +8,9 @@ const NAV_ITEMS = [
    { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Services', path: '/services' },
+  {label:'Before & After', path:'/beforeafter'},
   { label: 'Location', path: '/location' },
+
 ];
 
 export default function Navbar() {
@@ -100,7 +101,7 @@ useEffect(()=>{
             </Link>
           ))}
            <Link
-          to="/booking"
+          to="https://wa.me/251936495034"
           className="border border-surface rounded-[6rem] bg-surface text-[#000] px-6 py-2.5 md:px-4 py-3 lg:px-6 py-3 md:text-sm xl:text-[1rem] font-medium hover:bg-accent hover:text-[#fff] hover:rounded-3xl transition-colors"
         >
           Schedule Online

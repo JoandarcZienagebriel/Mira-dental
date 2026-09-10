@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Import, Phone} from 'lucide-react';
+import { Phone} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { IMAGES } from '@/lib/images';
 import DentistSectionOne from '../components/home/AboutPreview';
@@ -53,7 +53,7 @@ export default function About() {
                                                <p className='flex justify-center items-center gap-2 py-2 '>
           or 
           <a
-          href="tel:09336495034"
+          href="https://wa.me/251936495034"
           className="flex items-center gap-2 md:text-sm xl:text-[1rem] font-medium transition-colors"
         >
           <Phone className="w-3.5 h-3.5" />

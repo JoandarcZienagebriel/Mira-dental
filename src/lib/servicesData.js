@@ -1,7 +1,7 @@
 import { IMAGES } from './images';
 import pedi from '../assets/img/s6.avif';
 import implant from '../assets/img/implant.avif';
-import due from '../assets/img/2.avif';
+import due from '../assets/img/2.png';
 import tre from '../assets/img/9.jpg';
 import five from '../assets/img/5.avif'
 import four from '../assets/img/tre.jpg';
@@ -13,7 +13,7 @@ import seven from '../assets/img/4.jpg';
 import braces from '../assets/img/braces.avif';
 import toothache from '../assets/img/toothache.avif';
 import check from '../assets/img/check.avif';
-import eight from '../assets/img/1.avif';
+import eight from '../assets/img/1.jpg';
 export const SERVICES = [
   {
     title: 'Check-Up & Cleaning',
@@ -70,12 +70,19 @@ export const BEFORE = [
    {
      image: six,
   },
-{
-     image: seven,
-  },
 
   {
      image: due,
+  },
+ 
+  {
+     image: eight
+  },
+  {
+     image: four,
+  },
+ {
+     image: seven,
   },
   {
      image: tre,
@@ -84,14 +91,6 @@ export const BEFORE = [
   {
      image: five,
   },
-  {
-     image: eight
-  },
-  {
-     image: four,
-  },
- 
- 
 ]
 export const PROCEDURE = [
     {
