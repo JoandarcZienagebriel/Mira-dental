@@ -69,7 +69,7 @@ useEffect(()=>{
           transition={{ duration: 0.6 }}
           className="gap-0 w-full h-full min-h-screen grid grid-rows-[1fr_1fr] bg-surface md:grid-rows-none md:grid-cols-[1fr_1fr]"
         >
-              <div className='order-2 md:order-2 p-[1.5rem] mt-16'>
+              <div className='order-2 md:order-2 p-[1.5rem] py-16'>
           <h2 className="font-heading text-3xl text-center md:text-4xl font-semibold text-[#000] mb-6">
        Meet Our Team
           </h2>

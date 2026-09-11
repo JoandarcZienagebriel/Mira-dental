@@ -60,7 +60,7 @@ useEffect(() => {
 
   return (
     
-    <section className="hidden lg:block py-12">
+    <section className="hidden lg:block py-12 bg-[#fff]">
       
       <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:pt-[4rem] lg:pb-[4rem]">
         <motion.div

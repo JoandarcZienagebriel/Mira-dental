@@ -52,7 +52,7 @@ gsap.to(el1, {
     },
      scrollTrigger: {
       trigger: el1,
-      scrub: 1,
+      scrub: 3,
      start:'top top',
        end:'+=1000',
 },

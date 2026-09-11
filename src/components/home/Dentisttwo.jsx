@@ -67,14 +67,14 @@ const ctx= gsap.context(()=>{
         >
               <div className='order-2 md:order-1 p-[1.5rem] mt-16'>
           <h2 className="font-heading text-3xl text-center md:text-4xl font-semibold text-primary mb-6 leading-tight">
-      Dr. Hana Mekonnen
+      Dr. Tsegaye Solomon
           </h2>
     
                   <p className='font-body text-card text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
-                  Dr. Hana Mekonnen is an Ethiopian dentist with a background in general and cosmetic dentistry. She trained in Addis Ababa and has worked with patients
+                 Dr. Tsegaye Solomon is an Ethiopian dentist with a background in general and cosmetic dentistry. She trained in Addis Ababa and has worked with patients
                    across different age groups,
                    developing a reputation for gentle, attentive care.
-                   Her focus is on creating healthy, natural-looking smiles while making every patient feel comfortable.s
+                   Her focus is on creating healthy, natural-looking smiles while making every patient feel comfortable.
 </p>
                  
                  </div>

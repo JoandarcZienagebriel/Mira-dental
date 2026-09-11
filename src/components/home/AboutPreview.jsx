@@ -64,11 +64,11 @@ return()=>ctx.revert();
         >
               <div className='order-2 md:order-2 p-[1.5rem] mt-16'>
           <h2 className="font-heading text-3xl text-center md:text-4xl font-semibold text-primary mb-6 leading-tight">
-      Dr. Dawit Tesfaye
+      Dr. Nardos Ashagre
           </h2>
     
                   <p className='font-body text-card text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
-                Dr. Dawit Tesfaye is an Ethiopian dentist with a background in restorative and preventive dentistry. After completing his dental training in Ethiopia,
+                Dr. Nardos Ashagre is an Ethiopian dentist with a background in restorative and preventive dentistry. After completing his dental training in Ethiopia,
                  he gained experience in both private practice and community dental care.
                  He is committed to practical, patient-centered treatment and helping patients maintain strong oral health for the long term.
 </p>

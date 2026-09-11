@@ -61,7 +61,7 @@ gsap.registerPlugin(ScrollTrigger);
 
               </ul>  
                   <Link
-                    to="/booking"
+                    to="https://wa.me/251936495034"
                     className="inline-flex text-[#000] items-center gap-2 mt-4 pl-4 font-semibold text-[1rem] md:text-[1.2rem] hover:gap-3 transition-all"
                   >
                     Book & Smile

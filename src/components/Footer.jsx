@@ -33,7 +33,7 @@ export default function Footer() {
           0933 649 5034
         </a>
         <Link
-          to="/booking"
+          to="https://wa.me/251936495034"
           className="border border-accent rounded-lg bg-accent text-white text-center px-6 py-2.5 md:px-4 py-3 lg:px-6 py-3 md:text-sm xl:text-[1rem] font-semibold hover:rounded-3xl transition-colors"
         >
           Book & Smile
@@ -50,7 +50,7 @@ export default function Footer() {
                 { label: 'About Us', path: '/about' },
                 { label: 'Services', path: '/services' },
                 { label: 'Location', path: '/location' },
-                { label: 'Book Appointment', path: '/booking' },
+                { label: 'Book Appointment', path: 'https://wa.me/251936495034' },
               ].map((link) => (
                 <Link
                   key={link.path}

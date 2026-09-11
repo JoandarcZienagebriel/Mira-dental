@@ -2,11 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import HeroSection from '@/components/home/HeroSection';
 import DentistsSection from '@/components/home/DentistsSection';
 import AboutUs from '../components/home/AboutUs';
-import BeforeAfter from '@/components/home/BASection';
-import ServiceList from '@/components/home/ServiceList';
+import BeforeAfter from '../pages/beforeafter';
 import LocationSection from '../pages/LocationSection';
-import Clinic from '../components/home/clinic.jsx';
-import DentistTwo from '../components/home/Dentisttwo';
 import Procedure from '../components/home/Procedure.jsx';
 export default function Home() {
 
@@ -15,7 +12,7 @@ const aboutRef = useRef(null);
 const aboutRef1 = useRef(null)
 const logoRef = useRef(null);
   return (
-    <div>
+    <div className='bg-[#f6fff8]'>
       <HeroSection />
      <DentistsSection triggerRef={logoRef} serviceRef={serviceRef} />
        <AboutUs triggerRef={serviceRef}/>

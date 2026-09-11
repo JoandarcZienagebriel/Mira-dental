@@ -5,42 +5,8 @@ import { BEFORE} from '@/lib/servicesData';
 
 export default function BeforeAfter(){
     return(
-        <div >
-       <section className="py-4 pt-24 left-0 right-0 md:pt-16 bg-header md:mt-[-1rem]">
-              
-              <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                >
-                 
-                  <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-[#fff] mb-4">
-                    BEFORE & AFTER
-                  </h1>
-                   <div className="inline-flex flex-col items-center justify-center mx-auto mt-2">
-                  <Link
-                            to="/booking"
-                            className="border border-accent rounded-[6rem] bg-accent text-white text-center px-6 py-3 text-[.9rem] hover:-translate-y-1 transition-all duration-300"
-                          >
-                            Book Appointment
-                          </Link>
-                                               <p className='flex justify-center items-center gap-2 py-2 '>
-          or 
-          <a
-          href="https://wa.me/251936495034"
-          className="flex items-center gap-2 md:text-sm xl:text-[1rem] font-medium transition-colors"
-        >
-          <Phone className="w-3.5 h-3.5" />
-        +251 936495034
-        </a>
-        </p>
-                               </div>
-                </motion.div>
-              </div>
-              
-   
-            </section>
+        <section className='relative py-4 md:py-16 lg:py-24 bg-[#f6fff8]'>
+      
 
            <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center pb-8">
         
@@ -75,7 +41,7 @@ export default function BeforeAfter(){
                               <img
                                 src={service.image}
                                 alt={service.title}
-                                className="w-full h-[30rem] md:h-[25rem] lg:h-[30rem] lg:w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                className="w-full h-[30rem] md:h-[25rem] lg:h-[30rem] lg:w-full object-cover transition-transform duration-300 group-hover:scale-95"
                               />
                                 <div className='absolute inset-0 '></div>
                     
@@ -87,6 +53,6 @@ export default function BeforeAfter(){
                         ))}
                       </div>
             
-        </div>
+        </section>
     )
 }

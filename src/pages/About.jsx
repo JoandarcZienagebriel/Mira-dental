@@ -45,7 +45,7 @@ export default function About() {
                   </h1>
                    <div className="inline-flex flex-col items-center justify-center mx-auto mt-2">
                   <Link
-                            to="/booking"
+                            to="https://wa.me/251936495034"
                             className="border border-accent rounded-[6rem] bg-accent text-white text-center px-6 py-3 text-[.9rem] hover:-translate-y-1 transition-all duration-300"
                           >
                             Book Appointment
@@ -53,7 +53,7 @@ export default function About() {
                                                <p className='flex justify-center items-center gap-2 py-2 '>
           or 
           <a
-          href="https://wa.me/251936495034"
+          href="tel:09336495034"
           className="flex items-center gap-2 md:text-sm xl:text-[1rem] font-medium transition-colors"
         >
           <Phone className="w-3.5 h-3.5" />
@@ -63,7 +63,7 @@ export default function About() {
                                </div>
                 </motion.div>
               </div>
-              
+          
     
    
             </section>
