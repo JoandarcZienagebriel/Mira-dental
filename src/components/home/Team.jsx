@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';
 import TextPlugin from 'gsap/TextPlugin';
-import team from '../../assets/img/assistant.avif'
+import team from '../../assets/img/assist.avif';
 export default function Team() {
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -18,8 +18,9 @@ useEffect(() => {
       trigger: el,
       scrub: true,
            pin:true,
-      start:'top 10%',
+      start:'top top',
       end:'+=1000',
+      markers: true,
     }})
  
 return()=>{

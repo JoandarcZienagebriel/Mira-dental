@@ -96,7 +96,7 @@ useEffect(()=>{
             Book an appointment
           </Link>
 <Link
-            to="/booking"
+            to="tel:0936495034"
             className="font-body bg-accent px-2 py-5 rounded-[6rem] text-center text-white md:px-8 md:py-6 text-[1rem] md:text-[1.3rem] mt-8 font-medium hover:-translate-y-1 transition-all duration-300"
           >
             Contact Us

@@ -30,7 +30,7 @@ export default function Footer() {
           className="flex items-center gap-2 border border-[#fff] px-6 py-2.5 md:text-sm xl:text-[1rem] font-medium text-[#fff] hover:bg-accent hover:[#132a13] hover:text-white hover:rounded-3xl transition-colors"
         >
           <Phone className="w-3.5 h-3.5" />
-          0933 649 5034
+          0936495034
         </a>
         <Link
           to="https://wa.me/251936495034"
@@ -69,7 +69,7 @@ export default function Footer() {
             <div className="space-y-3">
               <a href="tel:0936495034" className="flex items-start gap-2.5 text-sm text-[#F5F5F4] hover:text-accent transition-colors">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
-                0933 649 5034
+                0936495034
               </a>
               <div className="flex items-start gap-2.5 text-sm text-[#F5F5F4]">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />

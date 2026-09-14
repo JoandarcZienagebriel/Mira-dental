@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { IMAGES } from '@/lib/images';
 import DentistSectionOne from '../components/home/AboutPreview';
 import DentistSectionTwo from '../components/home/Dentisttwo';
+import DentistSectionThree from '../components/home/dentistsectionthree';
 import { ABOUT_SLIDER } from '@/lib/images';
 import Team from '../components/home/Team';
 
@@ -116,6 +117,7 @@ export default function About() {
               
 <DentistSectionOne/>
 <DentistSectionTwo/>
+<DentistSectionThree/>
 <Team/>
     
     </div>
