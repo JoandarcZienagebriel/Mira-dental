@@ -66,7 +66,7 @@ const ctx= gsap.context(()=>{
           className="gap-0 w-full h-full min-h-screen grid grid-rows-[1fr_1fr] bg-surface md:grid-rows-none md:grid-cols-[1fr_1fr]"
         >
               <div className='order-2 md:order-1 p-[1.5rem] mt-16'>
-          <h2 className="font-heading text-3xl text-center md:text-4xl font-semibold text-primary mb-6 leading-tight">
+          <h2 className="font-heading text-3xl text-center md:text-4xl whitespace-nowrap font-semibold text-primary mb-6 leading-tight">
       Dr. Tsegaye Solomon
           </h2>
     
