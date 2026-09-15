@@ -20,7 +20,6 @@ useEffect(() => {
            pin:true,
       start:'top top',
       end:'+=1000',
-      markers: true,
     }})
  
 return()=>{
