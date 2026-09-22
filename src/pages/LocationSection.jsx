@@ -50,10 +50,8 @@ export default function LocationSection() {
                   <div>
                     <p className="font-medium ">Phone</p>
                     <a href="tel:09336495034" className="text-sm hover:text-[#8E8358] transition-colors">
-                      0933 649 5034
-                    </a> - <a href="tel:09336495034" className="text-sm hover:text-[#8E8358] transition-colors">
-                      0933 649 5034
-                    </a>
+                      09366495034
+                    </a> 
                   </div>
                 </div>
 
