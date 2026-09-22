@@ -13,41 +13,48 @@ import check from '../assets/img/check.avif';
 import eight from '../assets/img/1.avif';
 import gums from '../assets/img/0.avif';
 import five from '../assets/img/five.jpg';
+import { AlertTriangle } from 'lucide-react';
 
 export const SERVICES = [
   {
     title: 'Check-Up & Cleaning',
     description: 'Regular check-ups help us find dental problems early and keep your teeth and gums healthy. Our professional cleaning removes plaque and buildup, while we also give you simple advice to care for your teeth at home.',
   image: check,
+  alt:'woman getting her teeth checked-up'
   },
   {
     title: 'Fix a Damaged Tooth',
     description: 'Broken, cracked, worn or decayed teeth can affect your comfort and your smile. We provide treatment to repair and protect damaged teeth. Depending on your needs, treatment may include fillings, crowns or other options to restore the tooth and help you use it normally again. ',
     
     image: toothache,
+alt:'man suffering from toothache'
   },
  
    {
     title: 'Improve My Smile',
     description: 'If you want to feel more confident about your smile, we offer a range of cosmetic dental treatments. These include whitening, veneers, bonding and orthodontics, with options chosen to suit your smile and your needs. ',
     image: braces,
+    alt:'girl with braces'
   },
 
   {
     title: 'Replace Missing Teeth',
     description: 'Missing teeth can make eating, speaking and smiling more difficult. We offer dental implants, bridges and dentures to replace missing teeth. We will discuss your options with you and help find a solution that looks natural, feels comfortable and works for you.',
     image: implant,
+    alt:'demonstration of tooth implant'
   },
 
 {
 title:'Gum Problems',
 description:'Bleeding, swollen, sore or receding gums can be signs of gum problems that should not be ignored. We can check the cause and provide the right treatment to improve your gum health and prevent the problem from getting worse.',
 image: gums,
+alt:'before and after image of a treated receding gum'
 },
   {
     title: 'Paediatric & Emergency Dental Care',
     description: 'We provide gentle and friendly dental care for children, including first visits, check-ups, cavity prevention and sealants. For urgent problems, we also offer emergency dental care for severe toothaches, broken teeth and dental injuries, helping you get the care you need quickly.',
     image: pedi,
+    alt:'child getting his teeth checked-up'
   },
 ];
 export const SERVICES_SUMMARY = [
@@ -69,23 +76,29 @@ export const SERVICES_SUMMARY = [
 export const BEFORE = [
    {
      image: six,
+     alt:'replaced missing tooth'
   },
 
   {
      image: due,
+     alt:'Damaged teeth treated while preserving their natural shape.'
   },
  
   {
-     image: eight
+     image: eight,
+     alt:'veneer'
   },
   {
      image: four,
+     alt:'missing teeth replaced by natural looking artificial teeth'
   },
  {
      image: seven,
+     alt:'teeth replaced by natural looking artificial teeth'
   },
   {
      image: five,
+     alt:'veneer'
   },
 
 ]

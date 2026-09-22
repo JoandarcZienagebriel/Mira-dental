@@ -36,7 +36,7 @@ export default function DentistsSection() {
                   <div className='relative overflow-hidden group'>
                   <img
                     src={service.image}
-                    alt={service.title}
+                    alt={service.alt}
                     className="w-full h-[16rem] md:h-[20rem] lg:h-[25rem] object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                     <div className='absolute inset-0 '></div>

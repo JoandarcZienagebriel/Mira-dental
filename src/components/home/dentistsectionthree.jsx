@@ -67,13 +67,13 @@ return()=>ctx.revert();
           </h2>
     
                   <p className='font-body text-card text-[1rem] md:text-[1.2rem] xl:text-[1.4rem] font-bold leading-relaxed lg:px-12 xl:px-28' ref={paraRef} >
-                Dr. Nardos Ashagre is an Ethiopian dentist with a background in restorative and preventive dentistry. After completing his dental training in Ethiopia,
-                 he gained experience in both private practice and community dental care.
-                 He is committed to practical, patient-centered treatment and helping patients maintain strong oral health for the long term.
+              Dr. Etsetibeb Abebe is an experienced Ethiopian dentist and graduate of Addis Ababa University.
+                 With years of clinical experience, he provides comprehensive dental care with a focus on precise treatment, 
+                 patient comfort, and long-term oral health.
 </p>
                  
                  </div>
-                               <img src={dentistOne} className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-full'/>
+                               <img src={dentistOne} alt=' Dr. Etsetibeb Abebe' className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-full'/>
         </motion.div>
    
      

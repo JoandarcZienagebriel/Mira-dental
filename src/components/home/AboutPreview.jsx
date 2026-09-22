@@ -73,7 +73,7 @@ return()=>ctx.revert();
 </p>
                  
                  </div>
-                               <img src={dentistOne} className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-full'/>
+                               <img src={dentistOne} alt='Dr. Nardos Ashagre' className='order-1 w-full h-full object-cover md:order-1 md:w-full xl:h-full'/>
         </motion.div>
    
      

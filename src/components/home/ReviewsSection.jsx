@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const reviews = [
+
   {
     name: 'Hana Girma',
     time: '2 months ago',
@@ -11,7 +12,13 @@ const reviews = [
     text: 'Very professional and caring staff. The clinic is clean and modern. Highly recommend!'
   },
   {
-    name: 'Jess',
+    name: 'West Breal',
+    time: '7 month ago',
+    rating: 5,
+    text: "They provide excellent service in terms of hospitality and quality. Thank you.",
+  },
+  {
+    name: 'Tariku Alemu',
     time: '2 months ago',
     rating: 5,
     text: "Excellent review and very friendly staff. My visit was quick and comfortable.",
@@ -28,12 +35,7 @@ const reviews = [
     rating: 5,
     text: "Clean clinic, welcoming team, and outstanding dental care. I'll definitely be back.",
   },
-    {
-    name: 'Yors',
-    time: '1 month ago',
-    rating: 5,
-    text: "Very professional and caring staff. The clinic is clean and modern. Highly recommend!",
-  },
+    
  
    
 ];

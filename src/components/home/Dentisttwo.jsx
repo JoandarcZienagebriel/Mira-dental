@@ -78,7 +78,7 @@ const ctx= gsap.context(()=>{
 </p>
                  
                  </div>
-                 <img src={dentist_two} className='order-1 w-full h-full object-cover md:order-2 md:w-full'/>
+                 <img src={dentist_two} alt='Dr. Tsegaye Solomon' className='order-1 w-full h-full object-cover md:order-2 md:w-full'/>
                
         </motion.div>
 </section>
